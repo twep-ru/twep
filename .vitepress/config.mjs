@@ -3,24 +3,68 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "twep.",
   description: "Жизнь слишком коротка для строгой типизации",
+  lang: 'ru-RU',
+  locales: {
+    root: {
+      label: 'Русский',
+      lang: 'ru',
+    },
+  },
   themeConfig: {
-    nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
-    ],
+    nav: nav(),
 
-    sidebar: [
-      {
-        text: 'Examples',
-        items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
-        ]
-      }
-    ],
+    sidebar: {
+      "/js/": { base: "/js/", items: sidebarjs() },
+    },
+
+    docFooter: {
+      prev: "Назад",
+      next: "Далее",
+    },
+    outline: {
+      label: "Содержание",
+    },
+    returnToTopLabel: "Наверх",
+    sidebarMenuLabel: "Меню",
+    footer: {
+      message: "twep.",
+      copyright: "2025"
+    },
+    lightModeSwitchTitle: 'Переключить на светлую тему',
+    darkModeSwitchTitle: 'Переключить на тёмную тему',
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'telegram', link: 'https://t.me/twepru' }
     ]
   }
 })
+
+function nav() {
+  return [
+    {
+      text: "Главная",
+      link: "/",
+      activeMatch: "/",
+    },
+    {
+      text: "JavaScript",
+      link: "/js/links/docs",
+      activeMatch: "/js/",
+    },
+  ];
+}
+
+function sidebarjs() {
+  return [
+    {
+      text: "Полезные ссылки",
+      collapsed: false,
+      items: [
+        {
+          text: "Руководства",
+          link: "links/docs",
+        },
+      ],
+    },
+  ];
+}
