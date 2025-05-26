@@ -1,0 +1,35 @@
+# Основные директории
+node_modules/
+dist/
+.temp/
+.cache/
+
+# Файлы операционной системы
+.DS_Store
+Thumbs.db
+*.log
+
+# IDE и редакторы
+.vscode/
+.idea/
+*.sublime-project
+*.vscode-test/
+
+# Локальные конфигурации
+.env
+.env.local
+.env.*.local
+
+# Сборка и тесты
+coverage/
+reports/
+
+# Другие файлы
+*.tmp
+*.swp
+*.bak
+*.orig
+
+# Vitepress
+.vitepress/dist
+.vitepress/cache
