@@ -69,7 +69,7 @@ function sidebarjs() {
       collapsed: false,
       items: [
         {
-          text: "Руководства",
+          text: "Руководства по изучению",
           link: "links/docs",
         },
       ],
