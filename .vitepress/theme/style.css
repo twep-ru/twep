@@ -2,3 +2,9 @@
   --vp-c-brand-1: #646cff;
   --vp-c-brand-2: #747bff;
 }
+
+:root {
+  .vp-doc h3 {
+    all: 0;
+  }
+}
