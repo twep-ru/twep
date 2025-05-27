@@ -1,4 +1,5 @@
-import { defineConfig } from 'vitepress'
+import { defineConfig } from "vitepress";
+import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
   title: "twep.",
@@ -21,22 +22,29 @@ export default defineConfig({
       prev: "Назад",
       next: "Далее",
     },
+
     outline: {
       label: "Содержание",
     },
+
     returnToTopLabel: "Наверх",
     sidebarMenuLabel: "Меню",
+
     footer: {
       message: "twep.",
       copyright: "2025"
     },
+
     lightModeSwitchTitle: 'Переключить на светлую тему',
     darkModeSwitchTitle: 'Переключить на тёмную тему',
 
     socialLinks: [
       { icon: 'telegram', link: 'https://t.me/twepru' }
     ]
-  }
+  },
+  vite: {
+    plugins: [tailwindcss()],
+  },
 })
 
 function nav() {
