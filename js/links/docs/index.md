@@ -38,6 +38,13 @@ title: Руководства по изучению JavaScript
     image="./doka-logo.png"
     href="https://doka.guide/js/"
   />
+
+  <ProjectCard
+    title="Дока"
+    description="Добрый справочник для разработчиков"
+    image="./doka-logo.png"
+    href="https://doka.guide/js/"
+  />
 </div>
 
 Ваше мнение важно! Если вы уже проходили обучение по этим источникам — примите участие в опросе и оцените полезность каждого курса. Помогите другим выбрать лучшее!
