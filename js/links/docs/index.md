@@ -11,7 +11,6 @@ title: Руководства по изучению JavaScript
 ## На русском
 
 ::: raw
-
 <div className="grid grid-cols-2 gap-x-5 gap-y-8 md:grid-cols-3">
   <ProjectCard
     title="Javascript.ru"
@@ -72,15 +71,15 @@ title: Руководства по изучению JavaScript
     href="https://professorweb.ru/my/javascript/js_theory/level1/javascript_index.php"
   />
 </div>
-
 :::
 
+::: raw
 <Poll pollId="4b53f191-919b-43c9-a486-f0d97a3eaf7e" />
+:::
 
 ## На английском
 
 ::: raw
-
 <div className="grid grid-cols-2 gap-x-5 gap-y-8 md:grid-cols-3">
   <ProjectCard
     title="Javascript.info"
@@ -148,7 +147,8 @@ title: Руководства по изучению JavaScript
     href="https://scribbler.live/learn/javascript-tutorial-beginners/"
   />
 </div>
-
 :::
 
+::: raw
 <Poll pollId="5d3d3cd9-95c9-4521-a584-3e9621dbf087" />
+:::

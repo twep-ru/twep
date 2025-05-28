@@ -88,6 +88,7 @@ async function fetchData() {
     const { data: votesData, error: votesError } = await supabase
       .from('votes')
       .select('selected_option')
+      .eq('poll_id', props.pollId)
 
     if (votesError) throw votesError
 
