@@ -75,6 +75,8 @@ title: Руководства по изучению JavaScript
 
 :::
 
+<Poll pollId="4b53f191-919b-43c9-a486-f0d97a3eaf7e" />
+
 ## На английском
 
 ::: raw
@@ -148,3 +150,5 @@ title: Руководства по изучению JavaScript
 </div>
 
 :::
+
+<Poll pollId="5d3d3cd9-95c9-4521-a584-3e9621dbf087" />
