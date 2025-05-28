@@ -10,6 +10,18 @@ title: Руководства по изучению JavaScript
 
 ## На русском
 
+# hi
+
+> should be styled
+
+::: raw
+
+> should be unstyled
+
+:::
+
+::: raw
+
 <div className="grid grid-cols-2 gap-x-5 gap-y-8 md:grid-cols-3">
   <ProjectCard
     title="Javascript.ru"
@@ -42,6 +54,8 @@ title: Руководства по изучению JavaScript
     href="https://doka.guide/js/"
   />
 </div>
+
+:::
 
 Ваше мнение важно! Если вы уже проходили обучение по этим источникам — примите участие в опросе и оцените полезность каждого курса. Помогите другим выбрать лучшее!
 
