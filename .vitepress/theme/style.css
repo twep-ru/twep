@@ -1,6 +1,7 @@
 :root {
-  --vp-c-brand-1: #646cff;
-  --vp-c-brand-2: #747bff;
+  --vp-c-brand-1: oklch(51.4% 0.222 16.935);  /* Violet 700 */
+  --vp-c-brand-2: oklch(58.6% 0.253 17.585); /* Violet 600 */
+  --vp-c-brand-3: oklch(64.5% 0.246 16.439);  /* Violet 500 */
 
   /* Логотип в шапке */
   --vp-nav-logo-height: 40px;

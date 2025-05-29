@@ -13,6 +13,7 @@ export default defineConfig({
   },
   appearance: false,
   head: [['link', { rel: 'icon', href: '/favicon.svg' }]],
+  cleanUrls: true,
 
   themeConfig: {
     logo: {
@@ -64,7 +65,7 @@ function nav() {
     },
     {
       text: "JavaScript",
-      link: "/js/links/docs",
+      link: "/js/links/docs/",
       activeMatch: "/js/",
     },
   ];
@@ -78,7 +79,7 @@ function sidebarjs() {
       items: [
         {
           text: "Руководства по изучению",
-          link: "links/docs",
+          link: "links/docs/",
         },
       ],
     },
