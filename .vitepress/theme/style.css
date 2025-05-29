@@ -5,4 +5,12 @@
 
   /* Логотип в шапке */
   --vp-nav-logo-height: 40px;
+
+  /* Эффект за изображением в хиро-секции */
+  --vp-home-hero-image-background-image: linear-gradient(
+    -45deg,
+    #f0b4d0 50%,
+    #e6d2eb 50%
+  );
+  --vp-home-hero-image-filter: blur(68px);
 }

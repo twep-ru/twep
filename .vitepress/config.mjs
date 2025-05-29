@@ -78,7 +78,7 @@ function sidebarjs() {
       collapsed: false,
       items: [
         {
-          text: "Руководства по изучению",
+          text: "Руководства",
           link: "links/docs/",
         },
       ],
