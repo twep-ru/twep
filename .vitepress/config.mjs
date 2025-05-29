@@ -11,7 +11,15 @@ export default defineConfig({
       lang: 'ru',
     },
   },
+  appearance: 'force-auto',
+
+
   themeConfig: {
+    logo: {
+      light: '/twep-logotype.svg', dark: '/twep-logotype-dark.svg', logoAlt: 'twep.'
+    },
+    siteTitle: false,
+
     nav: nav(),
 
     sidebar: {
