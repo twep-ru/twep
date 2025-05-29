@@ -1,6 +1,6 @@
 <template>
   <a :href="href"
-    class="block rounded-lg no-underline text-gray-900 dark:text-gray-100 hover:**:data-title:text-orange-600 hover:**:data-image:shadow-lg hover:**:data-image:outline-0 hover:**:data-number:-translate-y-2"
+    class="block rounded-lg no-underline hover:**:data-title:text-rose-600 hover:**:data-image:shadow-lg hover:**:data-image:outline-0 hover:**:data-number:-translate-y-2"
     target="_blank" rel="noopener noreferrer">
     <div
       class="relative overflow-hidden mb-2 min-h-24 rounded-2xl outline outline-stone-100 transition-all duration-300 ease-in-out"
@@ -14,11 +14,11 @@
     </div>
     <div class="m-0 px-3">
       <h3
-        class="mb-0 text-sm font-medium text-stone-900 dark:text-gray-300 transition-colors duration-300 ease-in-out"
+        class="mb-0 text-sm font-medium text-stone-900 transition-colors duration-300 ease-in-out"
         data-title>
         {{ title }}
       </h3>
-      <p class="m-0 text-sm font-normal text-stone-600 dark:text-stone-300">
+      <p class="m-0 text-sm font-normal text-stone-600">
         {{ description }}
       </p>
     </div>

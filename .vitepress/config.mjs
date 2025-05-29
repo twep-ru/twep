@@ -11,8 +11,7 @@ export default defineConfig({
       lang: 'ru',
     },
   },
-  appearance: 'force-auto',
-
+  appearance: false,
 
   themeConfig: {
     logo: {

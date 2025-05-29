@@ -1,25 +1,25 @@
 <template>
   <div
-    class="mx-auto rounded-2xl shadow-md outline outline-stone-100 bg-white dark:bg-gray-900 transition-all">
+    class="mx-auto rounded-2xl shadow-md outline outline-stone-100 bg-white transition-all">
 
     <div class="text-center p-5">
-      <p class="mt-0 mb-2 text-sm font-normal text-stone-600 dark:text-stone-300">Проголосуйте за</p>
-      <h3 class="text-base font-medium text-stone-900 dark:text-gray-300">{{ question }}</h3>
+      <p class="mt-0 mb-2 text-sm font-normal text-stone-600">Проголосуйте за</p>
+      <h3 class="text-base font-medium text-stone-900">{{ question }}</h3>
     </div>
 
     <div class="p-4 rounded-2xl bg-violet-50">
       <ul class="space-y-2">
         <li v-for="(option, index) in options" :key="index"
-          class="relative rounded-xl overflow-hidden bg-violet-100 dark:bg-violet-800 transition-all">
+          class="relative rounded-xl overflow-hidden bg-violet-100 transition-all">
 
           <!-- Прогрессбар -->
-          <div class="absolute rounded-xl left-0 top-0 h-full bg-violet-300 dark:bg-violet-600 transition-all duration-700" :style="{
+          <div class="absolute rounded-xl left-0 top-0 h-full bg-violet-300 transition-all duration-700" :style="{
             width: hasVoted ? getPercentage(index) + '%' : '0%'
           }"></div>
 
           <!-- Кнопка -->
           <button
-            class="relative rounded-xl w-full z-10 px-4 py-3 text-left text-sm font-medium text-violet-950 hover:bg-violet-200 dark:hover:bg-violet-700 dark:text-white transition-colors duration-200"
+            class="relative rounded-xl w-full z-10 px-4 py-3 text-left text-sm font-medium text-violet-950 hover:bg-violet-200 transition-colors duration-200"
             :disabled="hasVoted" @click="vote(index)"
             :style="{ cursor: hasVoted ? 'default' : 'pointer' }">
             {{ option.text }}
@@ -28,7 +28,7 @@
 
           <!-- Процент -->
           <span
-            class="absolute right-4 top-1/2 -translate-y-1/2 text-sm font-semibold text-violet-950 dark:text-violet-200 z-10">
+            class="absolute right-4 top-1/2 -translate-y-1/2 text-sm font-semibold text-violet-950 z-10">
             {{ getPercentage(index) }}%
           </span>
         </li>
@@ -36,7 +36,7 @@
     </div>
 
     <div class="p-5 text-center">
-      <p class="mt-0 mb-2 text-sm font-normal text-stone-600 dark:text-stone-300">
+      <p class="mt-0 mb-2 text-sm font-normal text-stone-600">
         Всего проголосовало: {{ totalVotes }}
       </p>
       <p v-if="hasVoted" class="text-base font-medium text-rose-600">
