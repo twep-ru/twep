@@ -1,53 +1,47 @@
 <template>
-  <div class="poll-card max-w-lg mx-auto p-6 bg-white dark:bg-gray-800 rounded-xl shadow-md transition-all duration-300">
-    <h3 class="text-2xl font-bold mb-6 text-gray-800 dark:text-white">{{ question }}</h3>
+  <div
+    class="mx-auto rounded-2xl shadow-md outline outline-stone-100 bg-white dark:bg-gray-900 transition-all">
 
-    <div v-if="loading" class="text-center py-4 text-gray-500">Загрузка...</div>
+    <div class="text-center p-5">
+      <p class="mt-0 mb-2 text-sm font-normal text-stone-600 dark:text-stone-300">Проголосуйте за</p>
+      <h3 class="text-base font-medium text-stone-900 dark:text-gray-300">{{ question }}</h3>
+    </div>
 
-    <div v-else-if="error" class="text-red-500 text-center py-4">{{ error }}</div>
+    <div class="p-4 rounded-2xl bg-violet-50">
+      <ul class="space-y-2">
+        <li v-for="(option, index) in options" :key="index"
+          class="relative rounded-xl overflow-hidden bg-violet-100 dark:bg-violet-800 transition-all">
 
-    <div v-else class="space-y-4">
-      <!-- Варианты ответов -->
-      <div
-        v-for="(option, index) in options"
-        :key="index"
-        class="relative group"
-      >
-        <button
-          :disabled="hasVoted || loading"
-          @click="vote(index)"
-          class="w-full text-left px-5 py-3 rounded-lg border border-gray-300 dark:border-gray-600 
-                 bg-gray-50 dark:bg-gray-700 hover:bg-blue-50 dark:hover:bg-blue-900/30 
-                 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-200"
-        >
-          {{ option.text }}
-        </button>
+          <!-- Прогрессбар -->
+          <div class="absolute rounded-xl left-0 top-0 h-full bg-violet-300 dark:bg-violet-600 transition-all duration-700" :style="{
+            width: hasVoted ? getPercentage(index) + '%' : '0%'
+          }"></div>
 
-        <!-- Прогресс-бар -->
-        <transition name="slide-fade">
-          <div
-            v-show="showResults"
-            class="mt-1 h-2 bg-gray-200 dark:bg-gray-600 rounded-full overflow-hidden"
-          >
-            <div
-              class="h-full bg-gradient-to-r from-blue-500 to-purple-500 rounded-full transition-all duration-500 ease-out"
-              :style="{ width: getPercentage(index) + '%' }"
-            ></div>
-          </div>
-        </transition>
+          <!-- Кнопка -->
+          <button
+            class="relative rounded-xl w-full z-10 px-4 py-3 text-left text-sm font-medium text-violet-950 hover:bg-violet-200 dark:hover:bg-violet-700 dark:text-white transition-colors duration-200"
+            :disabled="hasVoted" @click="vote(index)"
+            :style="{ cursor: hasVoted ? 'default' : 'pointer' }">
+            {{ option.text }}
+            
+          </button>
 
-        <p
-          v-if="showResults"
-          class="text-sm text-gray-600 dark:text-gray-300 mt-1 ml-1"
-        >
-          {{ getVotesCount(index) }} голосов
-        </p>
-      </div>
+          <!-- Процент -->
+          <span
+            class="absolute right-4 top-1/2 -translate-y-1/2 text-sm font-semibold text-violet-950 dark:text-violet-200 z-10">
+            {{ getPercentage(index) }}%
+          </span>
+        </li>
+      </ul>
+    </div>
 
-      <!-- Сообщение после голосования -->
-      <div v-if="hasVoted && showResults" class="mt-4 text-green-600 dark:text-green-400 font-medium">
-        ✅ Спасибо за ваш голос!
-      </div>
+    <div class="p-5 text-center">
+      <p class="mt-0 mb-2 text-sm font-normal text-stone-600 dark:text-stone-300">
+        Всего проголосовало: {{ totalVotes }}
+      </p>
+      <p v-if="hasVoted" class="text-base font-medium text-rose-600">
+        Спасибо за ваш голос!
+      </p>
     </div>
   </div>
 </template>
@@ -66,12 +60,11 @@ const props = defineProps({
 const question = ref('')
 const options = ref([])
 const votes = ref({})
-const loading = ref(true)
-const error = ref(null)
+const selectedOption = ref(null)
 const hasVoted = ref(false)
-const showResults = ref(false)
+const totalVotes = ref(0)
+const loading = ref(true)
 
-// Получаем данные
 async function fetchData() {
   try {
     const { data: pollData, error: pollError } = await supabase
@@ -92,7 +85,6 @@ async function fetchData() {
 
     if (votesError) throw votesError
 
-    // Подсчёт голосов
     const counts = {}
     let total = 0
     votesData.forEach(vote => {
@@ -101,39 +93,40 @@ async function fetchData() {
     })
 
     votes.value = counts
-    hasVoted.value = !!votesData.find(vote => vote.poll_id === props.pollId)
-    showResults.value = true
+    totalVotes.value = total
+
+    const stored = localStorage.getItem(`voted_${props.pollId}`)
+    hasVoted.value = !!stored
   } catch (err) {
-    error.value = err.message
+    console.error(err)
   } finally {
     loading.value = false
   }
 }
 
-// Голосование
-async function vote(optionIndex) {
+async function vote(index) {
+  if (hasVoted.value) return
+  selectedOption.value = index
+
   const { error } = await supabase.from('votes').insert([
     {
       poll_id: props.pollId,
-      selected_option: optionIndex
+      selected_option: index
     }
   ])
 
-  if (error) {
-    console.error('Ошибка голосования:', error)
-    return
+  if (!error) {
+    votes.value[index] = (votes.value[index] || 0) + 1
+    totalVotes.value++
+    hasVoted.value = true
+    localStorage.setItem(`voted_${props.pollId}`, 'true')
   }
-
-  hasVoted.value = true
-  votes.value[optionIndex] = (votes.value[optionIndex] || 0) + 1
 }
 
-// Кол-во голосов
 function getVotesCount(index) {
   return votes.value[index] || 0
 }
 
-// Процент голосов
 function getPercentage(index) {
   const total = Object.values(votes.value).reduce((a, b) => a + b, 0)
   return total ? Math.round((getVotesCount(index) / total) * 100) : 0
@@ -141,17 +134,3 @@ function getPercentage(index) {
 
 onMounted(fetchData)
 </script>
-
-<style scoped>
-.slide-fade-enter-active {
-  transition: all 0.3s ease-out;
-}
-.slide-fade-leave-active {
-  transition: all 0.2s cubic-bezier(1, 0.5, 0.8, 1);
-}
-.slide-fade-enter-from,
-.slide-fade-leave-to {
-  transform: translateY(-10px);
-  opacity: 0;
-}
-</style>
