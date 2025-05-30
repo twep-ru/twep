@@ -55,26 +55,29 @@ export default defineConfig({
     plugins: [tailwindcss()],
   },
   transformHead({ pageData }) {
+    const baseUrl = 'https://twep.ru'
     const ogImage = '/twep-og.png'
-    const urlBase = 'https://twep.ru'
 
-    return [
-      // Open Graph
-      ['meta', { property: 'og:type', content: 'website' }],
-      ['meta', { property: 'og:site_name', content: 'twep.' }],
-      ['meta', { property: 'og:title', content: pageData.title || 'twep.' }],
-      ['meta', { property: 'og:description', content: pageData.description || 'Жизнь слишком коротка для строгой типизации' }],
-      ['meta', { property: 'og:url', content: `${urlBase}${pageData.relativePath.replace(/\.md$/, '')}` }],
-      ['meta', { property: 'og:image', content: `${urlBase}${ogImage}` }],
-      ['meta', { property: 'og:image:alt', content: 'twep. logo' }],
-      ['meta', { property: 'og:locale', content: 'ru_RU' }],
+    const head = []
 
-      // Twitter Card
-      ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
-      ['meta', { name: 'twitter:title', content: pageData.title || 'twep.' }],
-      ['meta', { name: 'twitter:description', content: pageData.description || 'Жизнь слишком коротка для строгой типизации' }],
-      ['meta', { name: 'twitter:image', content: `${urlBase}${ogImage}` }],
-    ]
+    const title = pageData.title || 'twep.'
+    const description = pageData.description || 'Бесплатные учебники по JavaScript'
+    const path = pageData.relativePath.replace(/\.md$/, '')
+    const url = `${baseUrl}/${path}`.replace(/^\//, '') // убираем лишний слеш
+
+    head.push(['meta', { property: 'og:type', content: 'website' }])
+    head.push(['meta', { property: 'og:title', content: title }])
+    head.push(['meta', { property: 'og:description', content: description }])
+    head.push(['meta', { property: 'og:url', content: url }])
+    head.push(['meta', { property: 'og:image', content: `${baseUrl}${ogImage}` }])
+    head.push(['meta', { property: 'og:image:alt', content: 'twep. logo' }])
+    head.push(['meta', { property: 'og:locale', content: 'ru_RU' }])
+    head.push(['meta', { name: 'twitter:card', content: 'summary_large_image' }])
+    head.push(['meta', { name: 'twitter:title', content: title }])
+    head.push(['meta', { name: 'twitter:description', content: description }])
+    head.push(['meta', { name: 'twitter:image', content: `${baseUrl}${ogImage}` }])
+
+    return head
   },
 })
 
@@ -88,7 +91,7 @@ function nav() {
     {
       text: "JavaScript",
       link: "/js/links/docs",
-      activeMatch: "/js/",
+      activeMatch: "/js",
     },
   ];
 }
