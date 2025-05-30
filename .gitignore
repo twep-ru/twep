@@ -33,3 +33,5 @@ reports/
 # Vitepress
 .vitepress/dist
 .vitepress/cache
+
+docs
