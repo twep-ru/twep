@@ -129,7 +129,7 @@ description: Лучшие бесплатные онлайн-учебники и 
   
   <ProjectCard
     title="Learn-js"
-    description="Interactive JavaScript tutorial"
+    description="Interactive JavaScript tutorials"
     image="/assets/js/links/docs/learn-js-logo.png"
     href="https://www.learn-js.org/"
   />
