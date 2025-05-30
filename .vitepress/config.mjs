@@ -65,7 +65,7 @@ function nav() {
     },
     {
       text: "JavaScript",
-      link: "/js/links/docs/",
+      link: "/js/links/docs",
       activeMatch: "/js/",
     },
   ];
@@ -79,7 +79,7 @@ function sidebarjs() {
       items: [
         {
           text: "Руководства",
-          link: "links/docs/",
+          link: "links/docs",
         },
       ],
     },
