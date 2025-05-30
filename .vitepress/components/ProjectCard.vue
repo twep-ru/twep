@@ -3,7 +3,7 @@
     class="block rounded-lg no-underline hover:**:data-title:text-rose-600 hover:**:data-image:shadow-lg hover:**:data-image:outline-0 hover:**:data-number:-translate-y-2"
     target="_blank" rel="noopener noreferrer">
     <div
-      class="relative overflow-hidden mb-2 min-h-24 rounded-2xl outline outline-stone-100 transition-all duration-300 ease-in-out"
+      class="relative overflow-hidden mb-2 rounded-2xl outline outline-stone-100 transition-all duration-300 ease-in-out"
       data-image>
       <img :src="image" :alt="title" class="w-full h-auto object-cover" />
       <div
