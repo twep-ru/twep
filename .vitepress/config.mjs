@@ -78,7 +78,7 @@ export default defineConfig({
 function nav() {
   return [
     {
-      text: "twep.",
+      text: "Главная",
       link: "/",
       activeMatch: "/",
     },
