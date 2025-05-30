@@ -54,6 +54,25 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
   },
+  transformHead({ pageData }) {
+    const ogImage = '/twep-og.png'
+    const urlBase = 'https://twep.ru'
+
+    return [
+      // Open Graph
+      ['meta', { property: 'og:type', content: 'website' }],
+      ['meta', { property: 'og:title', content: pageData.title || 'Главная' }],
+      ['meta', { property: 'og:description', content: pageData.description || 'Жизнь слишком коротка для строгой типизации' }],
+      ['meta', { property: 'og:url', content: `${urlBase}${pageData.relativePath.replace(/\.md$/, '')}` }],
+      ['meta', { property: 'og:image', content: `${urlBase}${ogImage}` }],
+
+      // Twitter Card
+      ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
+      ['meta', { name: 'twitter:title', content: pageData.title || 'Главная' }],
+      ['meta', { name: 'twitter:description', content: pageData.description || 'Жизнь слишком коротка для строгой типизации' }],
+      ['meta', { name: 'twitter:image', content: `${urlBase}${ogImage}` }],
+    ]
+  },
 })
 
 function nav() {
