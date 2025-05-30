@@ -56,7 +56,7 @@ export default defineConfig({
   },
   transformHead({ pageData }) {
     const ogImage = '/twep-og.png'
-    const urlBase = 'https://twep.ru'
+    const urlBase = 'https://twep.ru/'
 
     return [
       // Open Graph
