@@ -61,14 +61,14 @@ export default defineConfig({
     return [
       // Open Graph
       ['meta', { property: 'og:type', content: 'website' }],
-      ['meta', { property: 'og:title', content: pageData.title || 'Главная' }],
+      ['meta', { property: 'og:title', content: pageData.title || 'twep.' }],
       ['meta', { property: 'og:description', content: pageData.description || 'Жизнь слишком коротка для строгой типизации' }],
       ['meta', { property: 'og:url', content: `${urlBase}${pageData.relativePath.replace(/\.md$/, '')}` }],
       ['meta', { property: 'og:image', content: `${urlBase}${ogImage}` }],
 
       // Twitter Card
       ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
-      ['meta', { name: 'twitter:title', content: pageData.title || 'Главная' }],
+      ['meta', { name: 'twitter:title', content: pageData.title || 'twep.' }],
       ['meta', { name: 'twitter:description', content: pageData.description || 'Жизнь слишком коротка для строгой типизации' }],
       ['meta', { name: 'twitter:image', content: `${urlBase}${ogImage}` }],
     ]
@@ -78,7 +78,7 @@ export default defineConfig({
 function nav() {
   return [
     {
-      text: "Главная",
+      text: "twep.",
       link: "/",
       activeMatch: "/",
     },
