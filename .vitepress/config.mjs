@@ -56,15 +56,18 @@ export default defineConfig({
   },
   transformHead({ pageData }) {
     const ogImage = '/twep-og.png'
-    const urlBase = 'https://twep.ru/'
+    const urlBase = 'https://twep.ru'
 
     return [
       // Open Graph
       ['meta', { property: 'og:type', content: 'website' }],
+      ['meta', { property: 'og:site_name', content: 'twep.' }],
       ['meta', { property: 'og:title', content: pageData.title || 'twep.' }],
       ['meta', { property: 'og:description', content: pageData.description || 'Жизнь слишком коротка для строгой типизации' }],
       ['meta', { property: 'og:url', content: `${urlBase}${pageData.relativePath.replace(/\.md$/, '')}` }],
       ['meta', { property: 'og:image', content: `${urlBase}${ogImage}` }],
+      ['meta', { property: 'og:image:alt', content: 'twep. logo' }],
+      ['meta', { property: 'og:locale', content: 'ru_RU' }],
 
       // Twitter Card
       ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
