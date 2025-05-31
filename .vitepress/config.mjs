@@ -61,7 +61,7 @@ export default defineConfig({
     const head = []
 
     const title = pageData.title || 'twep.'
-    const description = pageData.description || 'Бесплатные учебники по JavaScript'
+    const description = pageData.description || 'Жизнь слишком коротка для строгой типизации'
     const path = pageData.relativePath.replace(/\.md$/, '')
     const url = `${baseUrl}/${path}`.replace(/^\//, '') // убираем лишний слеш
 
