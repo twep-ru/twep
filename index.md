@@ -8,7 +8,7 @@ hero:
   actions:
     - theme: brand
       text: Руководства
-      link: /js/links/docs/
+      link: /js/links/docs
   image:
     src: /twep-cat.png
     alt: Кот в очках, маскот twep.
