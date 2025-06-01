@@ -3,9 +3,9 @@
     class="block rounded-lg no-underline hover:**:data-title:text-rose-600 hover:**:data-image:shadow-lg"
     target="_blank" rel="noopener noreferrer">
     <div
-      class="overflow-hidden mb-2 rounded-2xl transition-all duration-300 ease-in-out"
+      class="w-18 h-18 overflow-hidden mb-2 rounded-2xl transition-all duration-300 ease-in-out"
       data-image>
-      <img :src="image" :alt="title" class="w-15 h-15 object-cover" />
+      <img :src="image" :alt="title" class="w-full h-full object-cover" />
     </div>
     <div class="m-0 px-1">
       <h3
