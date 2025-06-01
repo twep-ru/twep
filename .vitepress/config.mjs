@@ -106,6 +106,10 @@ function sidebarjs() {
           text: "Руководства",
           link: "links/docs",
         },
+        {
+          text: "Telegram-чаты",
+          link: "links/community",
+        },
       ],
     },
   ];
