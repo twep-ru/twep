@@ -3,12 +3,14 @@ import './style.css'
 import './tailwind.css'
 
 import ProjectCard from '../components/ProjectCard.vue';
+import ProjectCardSmall from '../components/ProjectCardSmall.vue';
 import Poll from '../components/Poll.vue';
 
 export default {
   ...DefaultTheme,
   enhanceApp({ app }) {
     app.component('ProjectCard', ProjectCard);
+    app.component('ProjectCardSmall', ProjectCardSmall);
     app.component('Poll', Poll);
   }
 };

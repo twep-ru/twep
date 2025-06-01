@@ -1,153 +1,33 @@
 ---
-title: Лучшие онлайн-учебники по изучению JavaScript
+title: Telegram-чаты для разработчиков на JavaScript
 description: Бесплатные практические руководства для начинающих разработчиков
 ---
 
 # {{ $frontmatter.title}}
 
-Рейтинг бесплатных руководств для начинающих разработчиков
-
-## На русском языке
+Подборка активных чатов в Телеграме, где вы сможете пообщаться с разработчиками на JavaScript, попросить совета или помочь другим, показать свои пет-проекты, найти работу и единомышленников.
 
 ::: raw
-<div className="grid grid-cols-2 gap-x-5 gap-y-8 md:grid-cols-3">
-  <ProjectCard
+<div className="grid grid-cols-2 gap-x-5 gap-y-8 mt-5 md:grid-cols-3">
+  <ProjectCardSmall
     title="Javascript.ru"
     description="Современный учебник JavaScript"
-    :number="1"
     image="/assets/js/links/docs/javascriptru-logo.png"
     href="https://learn.javascript.ru/"
   />
 
-  <ProjectCard
+  <ProjectCardSmall
     title="Code.mu"
     description="Лучший учебник по программированию"
-    :number="2"
     image="/assets/js/links/docs/codemu-logo.png"
     href="https://code.mu/ru/javascript/book/prime/"
   />
 
-  <ProjectCard
+  <ProjectCardSmall
     title="Дока"
     description="Добрый справочник для разработчиков"
-    :number="3"
     image="/assets/js/links/docs/doka-logo.png"
     href="https://doka.guide/js/"
   />
-
-  <ProjectCard
-    title="Metanit"
-    description="Сайт о программировании"
-    image="/assets/js/links/docs/metanit-logo.png"
-    href="https://metanit.com/web/javascript/"
-  />
-  
-  <ProjectCard
-    title="MDN"
-    description="Ресурсы для разработчиков от разработчиков"
-    image="/assets/js/links/docs/mdn-logo.png"
-    href="https://developer.mozilla.org/ru/docs/Learn_web_development/Core/Scripting/What_is_JavaScript"
-  />
-  
-  <ProjectCard
-    title="ИТ Шеф"
-    description="Всё о веб-разработке и программировании в одном месте"
-    image="/assets/js/links/docs/itchief-logo.png"
-    href="https://itchief.ru/javascript"
-  />
-  
-  <ProjectCard
-    title="JavaScript для тупых"
-    description="Позволит каждому изучить основы JavaScript"
-    image="/assets/js/links/docs/jsfordummies-logo.png"
-    href="https://thedvlpr.gitbook.io/javascript-for-dummies/glavnaya"
-  />
-  
-  <ProjectCard
-    title="Professor Web"
-    description="Обзор новых веб-стандартов"
-    image="/assets/js/links/docs/professorweb-logo.png"
-    href="https://professorweb.ru/my/javascript/js_theory/level1/javascript_index.php"
-  />
 </div>
-:::
-
-::: raw
-<Poll class="mt-10" pollId="4b53f191-919b-43c9-a486-f0d97a3eaf7e" />
-:::
-
-## На английском языке
-
-::: raw
-<div className="grid grid-cols-2 gap-x-5 gap-y-8 md:grid-cols-3">
-  <ProjectCard
-    title="Javascript.info"
-    description="The Modern JavaScript Tutorial"
-    :number="1"
-    image="/assets/js/links/docs/javascript-info-logo.png"
-    href="https://javascript.info/"
-  />
-
-  <ProjectCard
-    title="GeeksforGeeks"
-    description="Comprehensive educational portal"
-    :number="2"
-    image="/assets/js/links/docs/gfg-logo.png"
-    href="https://www.geeksforgeeks.org/javascript/"
-  />
-
-  <ProjectCard
-    title="MDN"
-    description="Resources for developers from developers"
-    :number="3"
-    image="/assets/js/links/docs/mdn-logo.png"
-    href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
-  />
-
-  <ProjectCard
-    title="W3Schools"
-    description="Educational website for learning coding online"
-    image="/assets/js/links/docs/w3schools-logo.png"
-    href="https://www.w3schools.com/js/DEFAULT.asp"
-  />
-  
-  <ProjectCard
-    title="web.dev"
-    description="Content to help you by members of the Chrome team"
-    image="/assets/js/links/docs/web-dev-logo.png"
-    href="https://web.dev/learn/javascript/welcome"
-  />
-  
-  <ProjectCard
-    title="Programiz"
-    description="Programiz to learn programming"
-    image="/assets/js/links/docs/itchief-logo.png"
-    href="https://www.programiz.com/javascript"
-  />
-  
-  <ProjectCard
-    title="Learn-js"
-    description="Interactive JavaScript tutorials"
-    image="/assets/js/links/docs/learn-js-logo.png"
-    href="https://www.learn-js.org/"
-  />
-  
-  <ProjectCard
-    title="Learn JavaScript Fast"
-    description="Learn Javascript fast with hands-on project"
-    image="/assets/js/links/docs/learnjs-fast-logo.png"
-    href="https://learnjavascriptfast.com/"
-  />
-
-  <ProjectCard
-    title="Scribbler"
-    description="Free JavaScript Tutorial"
-    image="/assets/js/links/docs/scribbler-logo.png"
-    href="https://scribbler.live/learn/javascript-tutorial-beginners/"
-  />
-</div>
-:::
-
-::: raw
-<Poll class="mt-10" pollId="5d3d3cd9-95c9-4521-a584-3e9621dbf087" />
 :::
