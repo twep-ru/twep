@@ -14,6 +14,9 @@ export default defineConfig({
   appearance: false,
   head: [["link", { rel: "icon", href: "/favicon.svg" }]],
   cleanUrls: true,
+  markdown: {
+    lazyLoading: true,
+  },
 
   themeConfig: {
     logo: {
