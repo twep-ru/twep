@@ -11,7 +11,7 @@ export default defineConfig({
       lang: "ru",
     },
   },
-  appearance: false,
+  appearance: false, // Тёмный режим
   head: [["link", { rel: "icon", href: "/favicon.svg" }]],
   cleanUrls: true,
   markdown: {
