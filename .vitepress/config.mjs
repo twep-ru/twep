@@ -115,6 +115,14 @@ function sidebarjs() {
       collapsed: false,
       items: [
         {
+          text: "Игра «Угадай число»",
+          link: "practice/guess-number",
+        },
+        {
+          text: "Изменение цвета фона",
+          link: "practice/bg-color-changer",
+        },
+        {
           text: "Простой калькулятор",
           link: "practice/calculator",
         },
