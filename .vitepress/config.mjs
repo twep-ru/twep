@@ -153,6 +153,10 @@ function sidebarjs() {
           text: "Эхо-бот",
           link: "grammy/echo",
         },
+        {
+          text: "Приветственный бот",
+          link: "grammy/hello",
+        },
       ],
     },
   ];
