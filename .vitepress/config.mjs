@@ -165,6 +165,10 @@ function sidebarjs() {
           text: "Бот-калькулятор",
           link: "grammy/calculator",
         },
+        {
+          text: "Бот случайных фактов",
+          link: "grammy/random",
+        },
       ],
     },
   ];
