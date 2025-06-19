@@ -145,5 +145,15 @@ function sidebarjs() {
         },
       ],
     },
+    {
+      text: "grammY",
+      collapsed: false,
+      items: [
+        {
+          text: "Эхо-бот",
+          link: "grammy/echo",
+        },
+      ],
+    },
   ];
 }
