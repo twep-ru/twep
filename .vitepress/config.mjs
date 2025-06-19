@@ -157,6 +157,10 @@ function sidebarjs() {
           text: "Приветственный бот",
           link: "grammy/hello",
         },
+        {
+          text: "Бот с подсказками",
+          link: "grammy/hints",
+        },
       ],
     },
   ];
