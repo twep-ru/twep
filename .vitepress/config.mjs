@@ -114,6 +114,16 @@ function nav() {
 function sidebarjs() {
   return [
     {
+      text: "Основы JavaScript",
+      collapsed: false,
+      items: [
+        {
+          text: "Переменные и операторы",
+          link: "js-basics/variables-operators/",
+        },
+      ],
+    },
+    {
       text: "Практика",
       collapsed: false,
       items: [
