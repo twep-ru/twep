@@ -14,6 +14,7 @@ og:
 ## На русском языке
 
 ::: raw
+
 <div className="grid grid-cols-2 gap-x-5 gap-y-8 md:grid-cols-3">
   <ProjectCard
     title="Javascript.ru"
@@ -40,39 +41,54 @@ og:
   />
 
   <ProjectCard
+  title="Professor Web"
+  description="Обзор новых веб-стандартов"
+  image="/assets/js/links/docs/professorweb-logo.png"
+  href="https://professorweb.ru/my/javascript/js_theory/level1/javascript_index.php"
+  />
+
+<ProjectCard
     title="Metanit"
     description="Сайт о программировании"
     image="/assets/js/links/docs/metanit-logo.png"
     href="https://metanit.com/web/javascript/"
   />
-  
-  <ProjectCard
+
+<ProjectCard
     title="MDN"
     description="Ресурсы для разработчиков от разработчиков"
     image="/assets/js/links/docs/mdn-logo.png"
     href="https://developer.mozilla.org/ru/docs/Learn_web_development/Core/Scripting/What_is_JavaScript"
   />
-  
-  <ProjectCard
+
+<ProjectCard
     title="ИТ Шеф"
     description="Всё о веб-разработке и программировании в одном месте"
     image="/assets/js/links/docs/itchief-logo.png"
     href="https://itchief.ru/javascript"
   />
-  
-  <ProjectCard
+
+<ProjectCard
     title="JavaScript для тупых"
     description="Позволит каждому изучить основы JavaScript"
     image="/assets/js/links/docs/jsfordummies-logo.png"
     href="https://thedvlpr.gitbook.io/javascript-for-dummies/glavnaya"
   />
   
-  <ProjectCard
-    title="Professor Web"
-    description="Обзор новых веб-стандартов"
-    image="/assets/js/links/docs/professorweb-logo.png"
-    href="https://professorweb.ru/my/javascript/js_theory/level1/javascript_index.php"
+<ProjectCard
+    title="MSiter"
+    description="Учебник Javascript для начинающих"
+    image="/assets/js/links/docs/msiter-logo.png"
+    href="https://msiter.ru/tutorials/javascript"
   />
+
+<ProjectCard
+    title="CodenameCRUD"
+    description="Не тяните время. Здесь все, что вам нужно знать"
+    image="/assets/js/links/docs/codenamecrud-logo.png"
+    href="https://codenamecrud.ru/"
+  />
+
 </div>
 :::
 
@@ -83,6 +99,7 @@ og:
 ## На английском языке
 
 ::: raw
+
 <div className="grid grid-cols-2 gap-x-5 gap-y-8 md:grid-cols-3">
   <ProjectCard
     title="Javascript.info"
@@ -92,7 +109,7 @@ og:
     href="https://javascript.info/"
   />
 
-  <ProjectCard
+<ProjectCard
     title="GeeksforGeeks"
     description="Comprehensive educational portal"
     :number="2"
@@ -100,7 +117,7 @@ og:
     href="https://www.geeksforgeeks.org/javascript/"
   />
 
-  <ProjectCard
+<ProjectCard
     title="MDN"
     description="Resources for developers from developers"
     :number="3"
@@ -108,47 +125,48 @@ og:
     href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
   />
 
-  <ProjectCard
+<ProjectCard
     title="W3Schools"
     description="Educational website for learning coding online"
     image="/assets/js/links/docs/w3schools-logo.png"
     href="https://www.w3schools.com/js/DEFAULT.asp"
   />
-  
-  <ProjectCard
+
+<ProjectCard
     title="web.dev"
     description="Content to help you by members of the Chrome team"
     image="/assets/js/links/docs/web-dev-logo.png"
     href="https://web.dev/learn/javascript/welcome"
   />
-  
-  <ProjectCard
+
+<ProjectCard
     title="Programiz"
     description="Programiz to learn programming"
     image="/assets/js/links/docs/itchief-logo.png"
     href="https://www.programiz.com/javascript"
   />
-  
-  <ProjectCard
+
+<ProjectCard
     title="Learn-js"
     description="Interactive JavaScript tutorials"
     image="/assets/js/links/docs/learn-js-logo.png"
     href="https://www.learn-js.org/"
   />
-  
-  <ProjectCard
+
+<ProjectCard
     title="Learn JavaScript Fast"
     description="Learn Javascript fast with hands-on project"
     image="/assets/js/links/docs/learnjs-fast-logo.png"
     href="https://learnjavascriptfast.com/"
   />
 
-  <ProjectCard
+<ProjectCard
     title="Scribbler"
     description="Free JavaScript Tutorial"
     image="/assets/js/links/docs/scribbler-logo.png"
     href="https://scribbler.live/learn/javascript-tutorial-beginners/"
   />
+
 </div>
 :::
 

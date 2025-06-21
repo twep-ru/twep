@@ -146,7 +146,7 @@ function sidebarjs() {
       collapsed: false,
       items: [
         {
-          text: "Руководства",
+          text: "Онлайн-учебники",
           link: "links/docs",
         },
         {
