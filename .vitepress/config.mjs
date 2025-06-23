@@ -125,6 +125,10 @@ function sidebarjs() {
           text: "Установка Node.js",
           link: "js-basics/installing-node-js",
         },
+        {
+          text: "Типы данных и условные конструкции",
+          link: "js-basics/data-types-сonditionals",
+        },
       ],
     },
     {
