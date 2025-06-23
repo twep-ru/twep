@@ -121,6 +121,10 @@ function sidebarjs() {
           text: "Переменные и операторы",
           link: "js-basics/variables-operators/",
         },
+        {
+          text: "Установка Node.js",
+          link: "js-basics/installing-node-js",
+        },
       ],
     },
     {
