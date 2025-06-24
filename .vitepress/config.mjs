@@ -129,6 +129,10 @@ function sidebarjs() {
           text: "Типы данных и условные конструкции",
           link: "js-basics/data-types-сonditionals",
         },
+        {
+          text: "Инструменты разработчика JavaScript",
+          link: "js-basics/javascript-developer-tools",
+        },
       ],
     },
     {
