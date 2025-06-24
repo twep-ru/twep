@@ -133,6 +133,10 @@ function sidebarjs() {
           text: "Инструменты разработчика JavaScript",
           link: "js-basics/javascript-developer-tools",
         },
+        {
+          text: "Основы функций",
+          link: "js-basics/function-basics/",
+        },
       ],
     },
     {
