@@ -137,6 +137,10 @@ function sidebarjs() {
           text: "Основы функций",
           link: "js-basics/function-basics/",
         },
+        {
+          text: "Решение задач",
+          link: "js-basics/problem-solving",
+        },
       ],
     },
     {
