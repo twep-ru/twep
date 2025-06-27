@@ -142,6 +142,10 @@ function sidebarjs() {
           link: "js-basics/problem-solving",
         },
         {
+          text: "Понимание ошибок",
+          link: "js-basics/understanding-errors",
+        },
+        {
           text: "Проект: Камень, ножницы, бумага",
           link: "js-basics/rock-paper-scissors",
         },
