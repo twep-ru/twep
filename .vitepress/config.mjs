@@ -141,6 +141,10 @@ function sidebarjs() {
           text: "Решение задач",
           link: "js-basics/problem-solving",
         },
+        {
+          text: "Проект: Камень, ножницы, бумага",
+          link: "js-basics/rock-paper-scissors",
+        },
       ],
     },
     {
