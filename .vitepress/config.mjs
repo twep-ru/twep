@@ -141,6 +141,10 @@ function sidebarjs() {
           text: "Решение задач",
           link: "js-basics/problem-solving",
         },
+        {
+          text: "Понимание ошибок",
+          link: "js-basics/understanding-errors",
+        },
       ],
     },
     {
