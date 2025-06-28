@@ -259,6 +259,10 @@ function sidebarRead() {
           text: "Код как документация",
           link: "code-as-documentation",
         },
+        {
+          text: "Каскадные методы для выразительности",
+          link: "cascading-methods-for-expressiveness",
+        },
       ],
     },
   ];
