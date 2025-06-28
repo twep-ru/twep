@@ -6,10 +6,6 @@ source:
   name: The Odin Project на Dev
 ---
 
-<script setup>
-  import ArticleMeta from '/.vitepress/components/ArticleMeta.vue'
-</script>
-
 # {{ $frontmatter.title}}
 
 <ArticleMeta :author="$frontmatter.author" :source="$frontmatter.source"/>

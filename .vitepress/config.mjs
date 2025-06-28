@@ -28,11 +28,14 @@ export default defineConfig({
 
     externalLinkIcon: true,
 
+    // Ссылка на навигацию в шапке сайта
     nav: nav(),
 
+    // Ссылки на сайдбары
     sidebar: {
       "/js/": { base: "/js/", items: sidebarjs() },
       "/odin/": { base: "/odin/", items: sidebarOdin() },
+      "/read/": { base: "/read/", items: sidebarRead() },
     },
 
     docFooter: {
@@ -97,6 +100,7 @@ export default defineConfig({
   },
 });
 
+// Навигация в шапке сайта
 function nav() {
   return [
     {
@@ -106,8 +110,13 @@ function nav() {
     },
     {
       text: "The Odin Project",
-      link: "/odin/articles/becoming-top",
+      link: "/odin/read/becoming-top",
       activeMatch: "/odin/",
+    },
+    {
+      text: "Чтиво",
+      link: "/read/code-tells-you-how-comments-tell-you-why",
+      activeMatch: "/read/",
     },
   ];
 }
@@ -225,7 +234,22 @@ function sidebarOdin() {
       items: [
         {
           text: "Как пройти The Odin Project и преуспеть",
-          link: "articles/becoming-top",
+          link: "read/becoming-top",
+        },
+      ],
+    },
+  ];
+}
+
+function sidebarRead() {
+  return [
+    {
+      text: "Полезно знать",
+      collapsed: false,
+      items: [
+        {
+          text: "Код говорит как, комментарии — почему",
+          link: "code-tells-you-how-comments-tell-you-why",
         },
       ],
     },
