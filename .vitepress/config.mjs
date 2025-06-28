@@ -104,11 +104,6 @@ export default defineConfig({
 function nav() {
   return [
     {
-      text: "JavaScript",
-      link: "/js/links/docs",
-      activeMatch: "/js/",
-    },
-    {
       text: "The Odin Project",
       link: "/odin/articles/becoming-top",
       activeMatch: "/odin/",
@@ -117,6 +112,11 @@ function nav() {
       text: "Чтиво",
       link: "/read/code-tells-you-how-comments-tell-you-why",
       activeMatch: "/read/",
+    },
+    {
+      text: "JavaScript",
+      link: "/js/links/docs",
+      activeMatch: "/js/",
     },
   ];
 }
@@ -254,6 +254,10 @@ function sidebarRead() {
         {
           text: "Программирование без комментариев",
           link: "coding-without-comments",
+        },
+        {
+          text: "Код как документация",
+          link: "code-as-documentation",
         },
       ],
     },
