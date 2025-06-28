@@ -110,7 +110,7 @@ function nav() {
     },
     {
       text: "The Odin Project",
-      link: "/odin/read/becoming-top",
+      link: "/odin/articles/becoming-top",
       activeMatch: "/odin/",
     },
     {
@@ -234,7 +234,7 @@ function sidebarOdin() {
       items: [
         {
           text: "Как пройти The Odin Project и преуспеть",
-          link: "read/becoming-top",
+          link: "articles/becoming-top",
         },
       ],
     },
@@ -250,6 +250,10 @@ function sidebarRead() {
         {
           text: "Код говорит как, комментарии — почему",
           link: "code-tells-you-how-comments-tell-you-why",
+        },
+        {
+          text: "Программирование без комментариев",
+          link: "coding-without-comments",
         },
       ],
     },
