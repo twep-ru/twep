@@ -32,6 +32,7 @@ export default defineConfig({
 
     sidebar: {
       "/js/": { base: "/js/", items: sidebarjs() },
+      "/odin/": { base: "/odin/", items: sidebarOdin() },
     },
 
     docFooter: {
@@ -99,14 +100,14 @@ export default defineConfig({
 function nav() {
   return [
     {
-      text: "Главная",
-      link: "/",
-      activeMatch: "/",
-    },
-    {
       text: "JavaScript",
       link: "/js/links/docs",
-      activeMatch: "/js",
+      activeMatch: "/js/",
+    },
+    {
+      text: "The Odin Project",
+      link: "/odin/articles/becoming-top",
+      activeMatch: "/odin/",
     },
   ];
 }
@@ -206,6 +207,21 @@ function sidebarjs() {
         {
           text: "Бот случайных фактов",
           link: "grammy/random",
+        },
+      ],
+    },
+  ];
+}
+
+function sidebarOdin() {
+  return [
+    {
+      text: "Чтиво",
+      collapsed: false,
+      items: [
+        {
+          text: "Как пройти The Odin Project и преуспеть",
+          link: "articles/becoming-top",
         },
       ],
     },
