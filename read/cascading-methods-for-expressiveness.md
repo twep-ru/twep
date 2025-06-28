@@ -3,7 +3,7 @@ title: Красивый JavaScript — как легко создавать це
 author: Ричард Бовелл
 source:
   url: https://javascriptissexy.com/beautiful-javascript-easily-create-chainable-cascading-methods-for-expressiveness/
-  name: JavaScript Is Sex
+  name: JavaScript Is Sexy
 ---
 
 # {{ $frontmatter.title}}
