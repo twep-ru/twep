@@ -115,44 +115,6 @@ function nav() {
 function sidebarjs() {
   return [
     {
-      text: "Основы JavaScript",
-      collapsed: false,
-      items: [
-        {
-          text: "Переменные и операторы",
-          link: "js-basics/variables-operators/",
-        },
-        {
-          text: "Установка Node.js",
-          link: "js-basics/installing-node-js",
-        },
-        {
-          text: "Типы данных и условные конструкции",
-          link: "js-basics/data-types-сonditionals",
-        },
-        {
-          text: "Инструменты разработчика JavaScript",
-          link: "js-basics/javascript-developer-tools",
-        },
-        {
-          text: "Основы функций",
-          link: "js-basics/function-basics/",
-        },
-        {
-          text: "Решение задач",
-          link: "js-basics/problem-solving",
-        },
-        {
-          text: "Понимание ошибок",
-          link: "js-basics/understanding-errors",
-        },
-        {
-          text: "Проект: Камень, ножницы, бумага",
-          link: "js-basics/rock-paper-scissors",
-        },
-      ],
-    },
-    {
       text: "Практика",
       collapsed: false,
       items: [
@@ -215,6 +177,44 @@ function sidebarjs() {
 
 function sidebarOdin() {
   return [
+    {
+      text: "Основы JavaScript",
+      collapsed: false,
+      items: [
+        {
+          text: "Переменные и операторы",
+          link: "js-basics/variables-operators/",
+        },
+        {
+          text: "Установка Node.js",
+          link: "js-basics/installing-node-js",
+        },
+        {
+          text: "Типы данных и условные конструкции",
+          link: "js-basics/data-types-сonditionals",
+        },
+        {
+          text: "Инструменты разработчика JavaScript",
+          link: "js-basics/javascript-developer-tools",
+        },
+        {
+          text: "Основы функций",
+          link: "js-basics/function-basics/",
+        },
+        {
+          text: "Решение задач",
+          link: "js-basics/problem-solving",
+        },
+        {
+          text: "Понимание ошибок",
+          link: "js-basics/understanding-errors",
+        },
+        {
+          text: "Проект: Камень, ножницы, бумага",
+          link: "js-basics/rock-paper-scissors",
+        },
+      ],
+    },
     {
       text: "Чтиво",
       collapsed: false,
