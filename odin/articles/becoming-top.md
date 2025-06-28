@@ -3,10 +3,16 @@ title: Как пройти The Odin Project и преуспеть
 author: Бриггс Элспергер
 source:
   url: https://dev.to/theodinproject/becoming-a-top-success-story-mindset-3dp2
-  name: The Odin Project
+  name: The Odin Project на Dev
 ---
 
+<script setup>
+  import ArticleMeta from '/.vitepress/components/ArticleMeta.vue'
+</script>
+
 # {{ $frontmatter.title}}
+
+<ArticleMeta :author="$frontmatter.author" :source="$frontmatter.source"/>
 
 История из 8 частей от одного из авторов The Odin Project 
 
