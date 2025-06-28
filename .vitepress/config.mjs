@@ -213,6 +213,10 @@ function sidebarOdin() {
           text: "Проект: Камень, ножницы, бумага",
           link: "js-basics/rock-paper-scissors",
         },
+        {
+          text: "Чистый код",
+          link: "js-basics/clean-code",
+        },
       ],
     },
     {
