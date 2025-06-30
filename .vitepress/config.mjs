@@ -226,6 +226,10 @@ function sidebarOdin() {
           text: "Чистый код",
           link: "js-basics/clean-code",
         },
+        {
+          text: "Циклы и массивы",
+          link: "js-basics/loops-arrays/",
+        },
       ],
     },
     {
