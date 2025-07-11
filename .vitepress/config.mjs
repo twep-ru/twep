@@ -230,6 +230,10 @@ function sidebarOdin() {
           text: "Циклы и массивы",
           link: "js-basics/loops-arrays/",
         },
+        {
+          text: "Манипуляции с DOM и события",
+          link: "js-basics/dom-manipulation-events",
+        },
       ],
     },
     {
