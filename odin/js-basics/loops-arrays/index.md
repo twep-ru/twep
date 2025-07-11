@@ -217,11 +217,11 @@ function sumOfTripledEvens(array) {
    - `Перемешайте массив`
    - `Оставить уникальные элементы массива`
 
-2. После этого продолжите практиковаться, выполнив упражнение [JavaScript Array Cardio Practice - Day 1](https://youtu.be/HB1ZC7czKRs?si=sfz4JwRQ6YymYokW) от Wes Bos. Для этого вам нужно будет склонировать репозиторий [JavaScript30](https://github.com/wesbos/JavaScript30) (используйте fork и clone).
+2. После этого продолжите практиковаться, выполнив упражнение [«Практика работы с массивами, день 1»](https://vkvideo.ru/video-223467206_456239035) от Wes Bos. Для этого вам нужно будет склонировать репозиторий [JavaScript30](https://github.com/twep-ru/JavaScript30/tree/Russian).
 
-3. Затем посмотрите и повторите за Wes Bos упражнение [Array Cardio Day 2](https://www.youtube.com/watch?v=QNmRfyNg1lw).
+3. Затем посмотрите и повторите за Wes Bos упражнение [«Практика работы с массивами, день 2»](https://vkvideo.ru/video-223467206_456239036).
 
-4. Вернитесь к репозиторию с [JavaScript-упражнениями](https://github.com/TheOdinProject/javascript-exercises), который мы использовали ранее в задании по [типам данных и условным конструкциям](../data-types-сonditionals). Ознакомьтесь с файлом `README` перед выполнением следующих задач по порядку:
+4. Вернитесь к репозиторию с [JavaScript-упражнениями](https://github.com/twep-ru/javascript-exercises), который мы использовали ранее в задании по [типам данных и условным конструкциям](../data-types-сonditionals). Ознакомьтесь с файлом `README` перед выполнением следующих задач по порядку:
 
    - `06_repeatString`
    - `07_reverseString`
