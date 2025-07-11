@@ -10,12 +10,22 @@ import ProjectCard from '../components/ProjectCard.vue';
 import ProjectCardSmall from '../components/ProjectCardSmall.vue';
 import Poll from '../components/Poll.vue';
 
+// Текстовые заглушки в уроках
+import LessonOverview from '../components/LessonOverview.vue';
+import LessonKnowledgeCheck from '../components/LessonKnowledgeCheck.vue';
+import LessonAdditionalResources from '../components/LessonAdditionalResources.vue';
+
 export default {
   ...DefaultTheme,
   enhanceApp({ app }) {
     app.component('ArticleMeta', ArticleMeta);
+
     app.component('ProjectCard', ProjectCard);
     app.component('ProjectCardSmall', ProjectCardSmall);
     app.component('Poll', Poll);
+
+    app.component('LessonOverview', LessonOverview);
+    app.component('LessonKnowledgeCheck', LessonKnowledgeCheck);
+    app.component('LessonAdditionalResources', LessonAdditionalResources);
   }
 };
