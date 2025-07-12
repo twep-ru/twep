@@ -639,4 +639,4 @@ NodeList — это коллекция узлов (DOM-элементов), на
 
 - [DOM JavaScript: стили и CSS-классы](https://www.youtube.com/playlist?list=PLillGF-RfqbbnEGyedXZaVvoYHT1OmzEk) — небольшое видео Александра Ламкова об основах DOM
 - [Работа с DOM-деревом на JavaScript](https://rutube.ru/video/d556d75ce14dd9bd9a32132061cd18d5/?playlist=354866) — полноценный курс из 15 видеоуроков про работу JS в DOM
-- [JavaScript Document object model (DOM) за час. Изменение HTML CSS. Атрибуты и свойства. Окружение.](https://rutube.ru/video/d556d75ce14dd9bd9a32132061cd18d5/?playlist=354866)
+- [JavaScript Document object model (DOM) за час. Изменение HTML CSS. Атрибуты и свойства. Окружение.](https://vkvideo.ru/video-223467206_456239082)
