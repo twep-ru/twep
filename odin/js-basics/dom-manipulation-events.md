@@ -302,3 +302,341 @@ btn.onclick = () => alert("Hello World");
 Этот подход немного лучше: мы вынесли JavaScript из HTML. Однако ограничение остаётся: у элемента может быть только один обработчик события `onclick`. Если вы попытаетесь назначить ещё один — старый будет заменён.
 
 > Если вы хотите освежить знания про стрелочные функции `() =>`, прочитайте статью о [стрелочных функциях в JavaScript](https://learn.javascript.ru/arrow-functions-basics).
+
+**Метод 3: через `addEventListener`**
+
+```html
+<!-- HTML-файл -->
+<button id="btn">Нажми меня тоже</button>
+```
+
+```javascript
+// JavaScript-файл
+const btn = document.querySelector("#btn");
+btn.addEventListener("click", () => {
+  alert("Hello World");
+});
+```
+
+Теперь мы сохраняем разделение логики и структуры (принцип "separation of concerns"), и при этом можем добавить несколько обработчиков событий на один элемент, если это понадобится. Метод 3 является гораздо более гибким и мощным, хотя и немного сложнее в настройке.
+
+Обратите внимание, что все три метода можно использовать с **именованными функциями**, например так:
+
+**HTML-файл**
+```html
+<!-- Метод 1 -->
+<button onclick="alertFunction()">НАЖМИ МЕНЯ</button>
+```
+
+```html
+<!-- Методы 2 и 3 -->
+<button id="btn">НАЖМИ МЕНЯ</button>
+```
+
+**JavaScript-файл**
+```javascript
+// Метод 1
+function alertFunction() {
+  alert("УРА! ТЫ СДЕЛАЛ ЭТО!");
+}
+
+// Методы 2 и 3
+function alertFunction() {
+  alert("УРА! ТЫ СДЕЛАЛ ЭТО!");
+}
+
+const btn = document.querySelector("#btn");
+
+// Метод 2
+btn.onclick = alertFunction;
+
+// Метод 3
+btn.addEventListener("click", alertFunction);
+```
+
+Использование именованных функций делает ваш код чище и понятнее. Это особенно полезно, если вы хотите вызывать одну и ту же функцию в разных частях кода.
+
+С помощью всех трёх методов вы можете получить дополнительную информацию о событии, передав параметр в вашу функцию. Попробуйте этот код на своём компьютере:
+
+```javascript
+btn.addEventListener("click", function (e) {
+  console.log(e);
+});
+```
+
+> Когда вы передаёте `alertFunction` или `function (e) {...}` в `addEventListener`, вы используете **callback-функцию** — функцию, которая передаётся как аргумент в другую функцию.
+
+Параметр `e` в этой функции содержит объект, связанный с самим событием. В этом объекте вы найдёте множество полезных свойств и методов: например, какая клавиша или кнопка мыши была нажата, а также информацию о **цели события** — DOM-элементе, на котором произошло событие.
+
+> Обратите внимание: в названии `e` нет ничего особенного — это просто принятое сокращение от слова "event". JavaScript знает, что это событие, потому что callback обработчика событий по определению принимает объект события.
+
+Когда вызывается callback, браузер передаёт в него ссылку на событие. Подробнее об объекте события вы можете узнать в [введении к событиям на MDN](https://developer.mozilla.org/ru/docs/Learn/JavaScript/Building_blocks/Events).
+
+Попробуйте следующее:
+
+```javascript
+btn.addEventListener("click", function (e) {
+  console.log(e.target);
+});
+```
+
+А теперь это:
+
+```javascript
+btn.addEventListener("click", function (e) {
+  e.target.style.background = "blue";
+});
+```
+
+Круто, правда?
+
+**Обработка событий для группы элементов**
+
+Если вы добавляете одинаковые обработчики событий для множества элементов, это может показаться трудоёмким. Но есть способы сделать это эффективнее.
+
+Мы уже знаем, что можем получить список элементов, соответствующих определённому селектору, с помощью `querySelectorAll('селектор')`. Чтобы добавить обработчик каждому элементу, нужно просто пройти по списку с помощью `.forEach`, как в этом примере:
+
+```html
+<div id="container">
+  <button id="one">Нажми меня</button>
+  <button id="two">Нажми меня</button>
+  <button id="three">Нажми меня</button>
+</div>
+```
+
+```javascript
+// buttons — это NodeList. Он ведёт себя почти как массив.
+const buttons = document.querySelectorAll("button");
+
+// мы используем метод .forEach, чтобы пройти по каждому элементу
+buttons.forEach((button) => {
+  // и для каждой кнопки добавляем обработчик события 'click'
+  button.addEventListener("click", () => {
+    alert(button.id);
+  });
+});
+```
+
+Это лишь верхушка айсберга, когда речь заходит о манипуляциях с DOM и обработке событий. Но этих знаний уже достаточно, чтобы начать выполнять практические задания.
+
+**Полезные типы событий**  
+
+В наших примерах мы пока использовали только событие `click`, но на самом деле их гораздо больше. Вот некоторые из часто используемых:
+
+- `click` — клик мышью
+- `dblclick` — двойной клик
+- `keydown` — нажатие клавиши
+- `keyup` — отпускание клавиши
+
+Более полный список событий с объяснениями вы найдёте на странице [Meliorem](http://meliorem.ru/frontend/javascript/spravochnik-javascript-sobytij-dom-elementov/).
+
+## Задание
+
+Манипуляция веб-страницами — это главное преимущество языка JavaScript! Как фронтенд-разработчик, вы будете использовать эти техники практически каждый день, так что давайте потренируемся!
+
+1. Пройдите раздел [**Активное обучение: основы управления структурой DOM**](https://developer.mozilla.org/ru/docs/Learn_web_development/Core/Scripting/DOM_scripting) на сайте MDN, посвящённый манипуляциям с DOM, чтобы проверить свои навыки!
+2. Ознакомьтесь с уроками по работе с DOM, чтобы понять, как использовать события на веб-страницах:
+   - [Событийная модель](https://doka.guide/js/events/)
+   - [Страница: DOMContentLoaded, load, beforeunload, unload](https://learn.javascript.ru/onload-ondomcontentloaded)
+   - [События мыши](https://metanit.com/web/javascript/9.5.php)
+   - [Клавиатура: keydown и keyup](https://learn.javascript.ru/keyboard-events)
+   - [Простое объяснение делегирования событий в JavaScript](https://habr.com/ru/articles/512782/)
+   - [Метод dispatchEvent](https://code.mu/ru/javascript/manual/event/dispatchEvent/)
+   - [Пользовательские события в JavaScript: зачем нужны и как настроить](https://thecode.media/polzovatelskie-sobytiya-v-javascript-zachem-nuzhny-i-kak-nastroit/)
+
+Обратите внимание, что некоторые методы, например `getElementById`, устарели и сегодня используются реже. Тем не менее, понимание их работы поможет вам лучше разобраться в основах.
+
+Пока вы читаете, помните: общие принципы применимы к любым событиям, а специфическую информацию по конкретным типам событий всегда можно найти в документации.
+
+## Проверьте себя
+
+<LessonKnowledgeCheck />
+
+**Что такое DOM?**  
+<details>  
+<summary>Ответ</summary>  
+
+DOM (Document Object Model — Объектная модель документа) — это программный интерфейс (API), представляющий структуру HTML-документа в виде дерева узлов. Это позволяет JavaScript взаимодействовать с элементами страницы, изменять их и реагировать на действия пользователя.
+
+</details>
+
+**Как выбрать узлы, с которыми вы хотите работать?**  
+<details>  
+<summary>Ответ</summary>  
+
+Для выбора узлов используются методы, такие как:  
+- `document.querySelector()` — выбирает первый подходящий элемент по CSS-селектору.  
+- `document.querySelectorAll()` — выбирает все подходящие элементы и возвращает NodeList.  
+Также можно использовать свойства связи между узлами, например: `firstElementChild`, `lastElementChild`, `previousElementSibling`, `nextElementSibling`.
+
+</details>
+
+**Как создать новый элемент в DOM?**  
+<details>  
+<summary>Ответ</summary>  
+
+Новый элемент создаётся с помощью метода:  
+```javascript
+const element = document.createElement("tag");
+```
+Например:  
+```javascript
+const div = document.createElement("div");
+```
+
+</details>
+
+**Как добавить элемент в DOM?**  
+<details>  
+<summary>Ответ</summary>  
+
+Элемент добавляется в DOM с помощью следующих методов:  
+- `parentNode.appendChild(childNode)` — добавляет элемент как последний дочерний узел родителя.  
+- `parentNode.insertBefore(newNode, referenceNode)` — добавляет элемент перед указанным узлом.
+
+</details>
+
+**Как удалить элемент из DOM?**  
+<details>  
+<summary>Ответ</summary>  
+
+Элемент удаляется с помощью метода:  
+```javascript
+parentNode.removeChild(child);
+```
+Пример:  
+```javascript
+container.removeChild(div);
+```
+
+</details>
+
+**Как изменить элемент в DOM?**  
+<details>  
+<summary>Ответ</summary>  
+
+Элемент можно изменить следующими способами:  
+- Изменение стиля: `element.style.property = value`  
+- Добавление/удаление классов: `element.classList.add/remove/toggle("class")`  
+- Установка атрибутов: `element.setAttribute("attr", "value")`  
+- Изменение содержимого: `element.textContent` или `element.innerHTML`
+
+</details>
+
+**При добавлении текста в элемент DOM, что лучше использовать: textContent или innerHTML? Почему?**  
+<details>  
+<summary>Ответ</summary>  
+
+Рекомендуется использовать `textContent`, потому что он безопаснее: он не интерпретирует HTML и предотвращает XSS-атаки. `innerHTML` позволяет вставлять HTML-разметку, но его следует использовать осторожно.
+
+</details>
+
+**Где в HTML-файле следует размещать тег `<script>` при работе с DOM?**  
+<details>  
+<summary>Ответ</summary>  
+
+Скрипт лучше всего размещать в конце перед закрывающим тегом `</body>`, чтобы гарантировать, что весь DOM уже загружен. Либо можно использовать атрибут `defer` в теге `<script>` в разделе `<head>`.
+
+</details>
+
+**Как работают «события» и «обработчики событий»?**  
+<details>  
+<summary>Ответ</summary>  
+
+События — это действия, происходящие в браузере (например, клик мыши, нажатие клавиши). Обработчики событий — это функции, которые вызываются при наступлении определённого события. С помощью них JavaScript может реагировать на действия пользователя.
+
+</details>
+
+**Какие три способа существуют для обработки событий в коде?**  
+<details>  
+<summary>Ответ</summary>  
+
+1. Атрибуты событий в HTML: `<button onclick="myFunction()">Click</button>`  
+2. Свойства DOM-элементов: `element.onclick = function`  
+3. Использование `addEventListener`: `element.addEventListener("click", function)`
+
+</details>
+
+**Почему для обработки событий предпочтительнее использовать addEventListener?**  
+<details>  
+<summary>Ответ</summary>  
+
+Метод `addEventListener` является наиболее гибким и предпочтительным, потому что:
+- Позволяет добавлять несколько обработчиков на одно событие.
+- Не перезаписывает существующие обработчики.
+- Поддерживает параметры, такие как `useCapture` и возможность удаления слушателей.
+
+</details>
+
+**Каковы преимущества использования именованных функций в обработчиках событий?**  
+<details>  
+<summary>Ответ</summary>  
+
+Именованные функции:
+- Повторно используемы.
+- Легче читаются и поддерживаются.
+- Позволяют организовать логику вне обработчика события.
+
+</details>
+
+**Как прикрепить обработчики событий к группе элементов?**  
+<details>  
+<summary>Ответ</summary>  
+
+Сначала получите список элементов с помощью `querySelectorAll()`, затем пройдитесь по нему циклом `.forEach()` и добавьте обработчик каждому элементу:
+
+```javascript
+document.querySelectorAll("button").forEach(button => {
+  button.addEventListener("click", myFunction);
+});
+```
+
+</details>
+
+**В чём разница между результатами работы querySelector и querySelectorAll?**  
+<details>  
+<summary>Ответ</summary>  
+
+- `querySelector()` возвращает **первый** совпадающий элемент.  
+- `querySelectorAll()` возвращает **NodeList** всех совпадающих элементов.
+
+</details>
+
+**Что содержит NodeList?**  
+<details>  
+<summary>Ответ</summary>  
+
+NodeList — это коллекция узлов (DOM-элементов), найденных по указанному селектору. Она похожа на массив, но не имеет всех его методов. Однако её можно преобразовать в массив с помощью `Array.from()` или spread-оператора `[...nodeList]`.
+
+</details>
+
+**В чём разница между «захватом события» (capture) и «всплытием» (bubbling)?**  
+<details>  
+<summary>Ответ</summary>  
+
+- **Всплытие (bubbling)** — событие начинается с целевого элемента и поднимается вверх по дереву DOM (к родителям).  
+- **Захват (capture)** — событие начинается с верхних элементов и движется вниз к целевому элементу.  
+По умолчанию события обрабатываются на этапе всплытия. Чтобы обработать событие на этапе захвата, нужно указать `{ capture: true }` в `addEventListener`.
+
+</details>
+
+## Дополнительные материалы
+
+<LessonAdditionalResources />
+
+**Статьи и уроки**
+
+- [Выразительный Javascript — Document Object Model](https://karmazzin.gitbook.io/eloquentjavascript_ru/chapter13)
+- [Выразительный Javascript — Обработка событий](https://karmazzin.gitbook.io/eloquentjavascript_ru/chapter14)
+- Раздел [Манипуляции с DOM](https://cheatsheets.super-mark.ru/) — шпаргалка с примерами кода по работе с DOM и другими аспектами JavaScript.
+- [Что такое DOM и зачем он нужен?](https://itchief.ru/javascript/dom) — ещё одна статья, объясняющая основы DOM.
+- [MDN — Введение в события](https://developer.mozilla.org/ru/docs/Learn/JavaScript/Building_blocks/Events) — подробное объяснение всех тем, связанных с событиями.
+- [Создаём ударную установку на JS! #JavaScript30](https://vkvideo.ru/playlist/-223467206_4/video-223467206_456239038) — бесплатный видеокурс от Wes Bos, который поможет закрепить знания из этого урока. Обратите внимание: в видео используется устаревшее свойство `keyCode`, вместо него рекомендуется использовать `code`.
+- [Захват, распространение и всплытие событий в JavaScript](https://vkvideo.ru/playlist/-223467206_4/video-223467206_456239063) — видео из #JavaScript30 от Wes Bos.
+- [Callback функции в JavaScript: как работают, примеры использования](https://sky.pro/wiki/javascript/callback-funkcii-v-javascript-kak-rabotayut-primery-ispolzovaniya/) — объяснение callback-функций.
+
+**Видео**
+
+- [DOM JavaScript: стили и CSS-классы](https://www.youtube.com/playlist?list=PLillGF-RfqbbnEGyedXZaVvoYHT1OmzEk) — небольшое видео Александра Ламкова об основах DOM
+- [Работа с DOM-деревом на JavaScript](https://rutube.ru/video/d556d75ce14dd9bd9a32132061cd18d5/?playlist=354866) — полноценный курс из 15 видеоуроков про работу JS в DOM
+- [JavaScript Document object model (DOM) за час. Изменение HTML CSS. Атрибуты и свойства. Окружение.](https://rutube.ru/video/d556d75ce14dd9bd9a32132061cd18d5/?playlist=354866)
