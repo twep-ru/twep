@@ -434,7 +434,7 @@ buttons.forEach((button) => {
 
 Манипуляция веб-страницами — это главное преимущество языка JavaScript! Как фронтенд-разработчик, вы будете использовать эти техники практически каждый день, так что давайте потренируемся!
 
-1. Пройдите раздел [**Активное обучение: основы управления структурой DOM**](https://developer.mozilla.org/ru/docs/Learn_web_development/Core/Scripting/DOM_scripting) на сайте MDN, посвящённый манипуляциям с DOM, чтобы проверить свои навыки!
+1. Пройдите разделы [**Активное обучение**](https://developer.mozilla.org/ru/docs/Learn_web_development/Core/Scripting/DOM_scripting) на сайте MDN, которые посвящены манипуляциям с DOM, чтобы проверить свои навыки!
 2. Ознакомьтесь с уроками по работе с DOM, чтобы понять, как использовать события на веб-страницах:
    - [Событийная модель](https://doka.guide/js/events/)
    - [Страница: DOMContentLoaded, load, beforeunload, unload](https://learn.javascript.ru/onload-ondomcontentloaded)
@@ -637,6 +637,6 @@ NodeList — это коллекция узлов (DOM-элементов), на
 
 **Видео**
 
-- [Серия видеоуроков Александра Ламкова по JS](https://dzen.ru/suite/c31a8428-75b9-4079-9758-ef71566d0a1a) — об основах DOM и событиях (уроки по DOM: с 24 по 31, уроки по событиям: с 32 по 36).
+- [Серия видеоуроков Александра Ламкова по JS](https://rutube.ru/plst/442452/) — об основах DOM и событиях (уроки по DOM: с 24 по 31, уроки по событиям: с 32 по 36).
 - [Работа с DOM-деревом на JavaScript](https://rutube.ru/video/d556d75ce14dd9bd9a32132061cd18d5/?playlist=354866) — полноценный курс из 15 видеоуроков про работу JS в DOM
 - [JavaScript Document object model (DOM) за час. Изменение HTML CSS. Атрибуты и свойства. Окружение.](https://vkvideo.ru/video-223467206_456239082)
