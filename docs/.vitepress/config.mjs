@@ -13,7 +13,6 @@ export default defineConfig({
   },
   appearance: false, // Тёмный режим
   head: [["link", { rel: "icon", href: "/favicon.svg" }]],
-  cleanUrls: true,
   markdown: {
     lazyLoading: true,
   },
