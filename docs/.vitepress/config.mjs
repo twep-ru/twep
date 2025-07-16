@@ -2,21 +2,20 @@ import { defineConfig } from "vitepress";
 import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
+  // head
   title: "twep.",
   description: "Жизнь слишком коротка для строгой типизации",
   lang: "ru-RU",
-  locales: {
-    root: {
-      label: "Русский",
-      lang: "ru",
-    },
-  },
-  appearance: false, // Тёмный режим
   head: [["link", { rel: "icon", href: "/favicon.svg" }]],
+
+  // Чистые ссылки
+  cleanUrls: true,
+
+  // Настройки темы
+  appearance: false, 
   markdown: {
     lazyLoading: true,
   },
-
   themeConfig: {
     logo: {
       light: "/twep-logotype.svg",
