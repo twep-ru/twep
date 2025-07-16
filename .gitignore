@@ -31,7 +31,5 @@ reports/
 *.orig
 
 # Vitepress
-.vitepress/cache
-.vitepress/dist
-
-docs
+docs/.vitepress/cache
+docs/.vitepress/dist
