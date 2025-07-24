@@ -197,6 +197,10 @@ function sidebarOdin() {
           text: "Манипуляции с DOM и события",
           link: "js-basics/dom-manipulation-events",
         },
+        {
+          text: "Возвращаемся к «Камню, ножницам, бумаге»",
+          link: "js-basics/revisiting-rock-paper-scissors/",
+        },
       ],
     },
     {
