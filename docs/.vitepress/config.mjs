@@ -201,6 +201,10 @@ function sidebarOdin() {
           text: "Возвращаемся к «Камню, ножницам, бумаге»",
           link: "js-basics/revisiting-rock-paper-scissors/",
         },
+        {
+          text: "Проект: Волшебный экран",
+          link: "js-basics/etch-a-sketch",
+        },
       ],
     },
     {
