@@ -205,6 +205,10 @@ function sidebarOdin() {
           text: "Проект: Волшебный экран",
           link: "js-basics/etch-a-sketch",
         },
+        {
+          text: "Основы объектов",
+          link: "js-basics/object-basics",
+        },
       ],
     },
     {
