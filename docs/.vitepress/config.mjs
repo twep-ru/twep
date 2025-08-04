@@ -231,6 +231,10 @@ function sidebarOdin() {
           text: "Выбор правильного языка программирования",
           link: "articles/choosing-the-right-language/",
         },
+        {
+          text: "Ruby on Rails против JavaScript",
+          link: "articles/ruby-on-rails-vs-javascript/",
+        },
       ],
     },
   ];
