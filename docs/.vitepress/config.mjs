@@ -213,6 +213,10 @@ function sidebarOdin() {
           text: "Проект: калькулятор",
           link: "js-basics/calculator",
         },
+        {
+          text: "Выберите своё направление",
+          link: "js-basics/choose-your-path",
+        },
       ],
     },
     {
