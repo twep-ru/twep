@@ -151,7 +151,7 @@ function sidebarOdin() {
   return [
     {
       text: "Основы JavaScript",
-      collapsed: true,
+      collapsed: false,
       items: [
         {
           text: "Переменные и операторы",
