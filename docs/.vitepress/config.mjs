@@ -209,6 +209,10 @@ function sidebarOdin() {
           text: "Основы объектов",
           link: "js-basics/object-basics",
         },
+        {
+          text: "Проект: калькулятор",
+          link: "js-basics/calculator",
+        },
       ],
     },
     {
