@@ -151,7 +151,7 @@ function sidebarOdin() {
   return [
     {
       text: "Основы JavaScript",
-      collapsed: false,
+      collapsed: true,
       items: [
         {
           text: "Переменные и операторы",
@@ -226,6 +226,10 @@ function sidebarOdin() {
         {
           text: "Как пройти The Odin Project и преуспеть",
           link: "articles/becoming-top",
+        },
+        {
+          text: "Выбор правильного языка программирования",
+          link: "articles/choosing-the-right-language/",
         },
       ],
     },
