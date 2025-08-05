@@ -2,8 +2,9 @@ import DefaultTheme from 'vitepress/theme'
 import './style.css'
 import './tailwind.css'
 
-// Мета-информация в статьях
+// Мета-информация
 import ArticleMeta from '../components/ArticleMeta.vue';
+import FastJsMeta from '../components/FastJsMeta.vue';
 
 // Голосования
 import ProjectCard from '../components/ProjectCard.vue';
@@ -19,6 +20,7 @@ export default {
   ...DefaultTheme,
   enhanceApp({ app }) {
     app.component('ArticleMeta', ArticleMeta);
+    app.component('FastJsMeta', FastJsMeta);
 
     app.component('ProjectCard', ProjectCard);
     app.component('ProjectCardSmall', ProjectCardSmall);
