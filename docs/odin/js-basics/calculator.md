@@ -1,6 +1,6 @@
 ---
 title: Калькулятор
-description: Наш финальный проект объединит всё, что вы узнали до сих пор: вы создадите калькулятор на экране, используя JavaScript, HTML и CSS
+description: Вы создадите калькулятор на экране, используя JavaScript, HTML и CSS
 ---
 
 # {{ $frontmatter.title}}

@@ -4,10 +4,6 @@ aside: false
 sidebar: false
 ---
 
-<script setup>
-  import ContactCard from '/.vitepress/components/ContactCard.vue';
-</script>
-
 # {{ $frontmatter.title }}
 
 ## Как проходить курс
@@ -59,8 +55,6 @@ sidebar: false
       </div>
     </div>
   </div>
-
-  <ContactCard />
   
 </div>
 
