@@ -277,7 +277,11 @@ function sidebarFastJs() {
         {
           text: "Прототипное наследование",
           link: "advanced-concepts/prototype-chain"
-        }
+        },
+        {
+          text: "Деструктуризация",
+          link: "advanced-concepts/destructuring"
+        },
       ]
     }
   ]
