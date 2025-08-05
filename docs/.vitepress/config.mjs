@@ -282,6 +282,10 @@ function sidebarFastJs() {
           text: "Деструктуризация",
           link: "advanced-concepts/destructuring"
         },
+        {
+          text: "Оператор расширения",
+          link: "advanced-concepts/spread"
+        },
       ]
     }
   ]
