@@ -12,7 +12,7 @@ export default defineConfig({
   cleanUrls: true,
 
   // Настройки темы
-  appearance: false, 
+  appearance: false,
   markdown: {
     lazyLoading: true,
   },
@@ -34,6 +34,7 @@ export default defineConfig({
       "/js/": { base: "/js/", items: sidebarjs() },
       "/odin/": { base: "/odin/", items: sidebarOdin() },
       "/read/": { base: "/read/", items: sidebarRead() },
+      "/fast-js/": { base: "/fast-js/", items: sidebarFastJs() },
     },
 
     docFooter: {
@@ -265,4 +266,19 @@ function sidebarRead() {
       ],
     },
   ];
+}
+
+function sidebarFastJs() {
+  return [
+    {
+      text: "Продвинутые концепции",
+      collapsed: false,
+      items: [
+        {
+          text: "Прототипное наследование",
+          link: "advanced-concepts/prototype-chain"
+        }
+      ]
+    }
+  ]
 }
