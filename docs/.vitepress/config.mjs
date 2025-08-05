@@ -286,6 +286,10 @@ function sidebarFastJs() {
           text: "Оператор расширения",
           link: "advanced-concepts/spread"
         },
+        {
+          text: "Опциональная цепочка",
+          link: "advanced-concepts/optional-chaining"
+        },
       ]
     }
   ]
