@@ -294,6 +294,10 @@ function sidebarFastJs() {
           text: "Оператор объединения с null",
           link: "advanced-concepts/nullish-coalescing"
         },
+        {
+          text: "Функции высшего порядка",
+          link: "advanced-concepts/higher-order-functions"
+        },
       ]
     }
   ]
