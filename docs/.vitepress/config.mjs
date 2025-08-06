@@ -298,6 +298,10 @@ function sidebarFastJs() {
           text: "Функции высшего порядка",
           link: "advanced-concepts/higher-order-functions"
         },
+        {
+          text: "Замыкания",
+          link: "advanced-concepts/closures"
+        },
       ]
     }
   ]
