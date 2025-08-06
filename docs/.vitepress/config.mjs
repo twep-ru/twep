@@ -290,6 +290,10 @@ function sidebarFastJs() {
           text: "Опциональная цепочка",
           link: "advanced-concepts/optional-chaining"
         },
+        {
+          text: "Оператор объединения с null",
+          link: "advanced-concepts/nullish-coalescing"
+        },
       ]
     }
   ]
