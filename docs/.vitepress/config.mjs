@@ -302,6 +302,10 @@ function sidebarFastJs() {
           text: "Замыкания",
           link: "advanced-concepts/closures"
         },
+        {
+          text: "Хитрости с массивами",
+          link: "advanced-concepts/array-tricks"
+        },
       ]
     }
   ]
