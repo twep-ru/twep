@@ -57,7 +57,16 @@ export default defineConfig({
     lightModeSwitchTitle: "Переключить на светлую тему",
     darkModeSwitchTitle: "Переключить на тёмную тему",
 
-    socialLinks: [{ icon: "telegram", link: "https://t.me/twepru" }],
+    socialLinks: [
+      {
+        icon: "telegram",
+        link: "https://t.me/twepru"
+      },
+      {
+        icon: "vk",
+        link: "https://vkvideo.ru/@twepru"
+      },
+    ],
   },
   vite: {
     plugins: [tailwindcss()],
@@ -67,11 +76,11 @@ export default defineConfig({
 // Навигация в шапке сайта
 function nav() {
   return [
-    {
-      text: "The Odin Project",
-      link: "/odin/articles/becoming-top",
-      activeMatch: "/odin/",
-    },
+    // {
+    //   text: "The Odin Project",
+    //   link: "/odin/articles/becoming-top",
+    //   activeMatch: "/odin/",
+    // },
     {
       text: "Чтиво",
       link: "/read/code-tells-you-how-comments-tell-you-why",
