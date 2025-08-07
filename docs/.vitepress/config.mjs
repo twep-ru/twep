@@ -325,6 +325,10 @@ function sidebarFastJs() {
           text: "Хитрости с массивами",
           link: "advanced-concepts/array-tricks",
         },
+        {
+          text: "История JavaScript",
+          link: "advanced-concepts/history-of-js",
+        },
       ],
     },
   ];
