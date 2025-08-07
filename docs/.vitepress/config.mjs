@@ -244,7 +244,17 @@ function sidebarOdin() {
 function sidebarRead() {
   return [
     {
-      text: "Полезно знать",
+      text: "Про JavaScript",
+      collapsed: false,
+      items: [
+        {
+          text: "Странная история JavaScript",
+          link: "about-js/the-weird-history-of-javascript/",
+        },
+      ],
+    },
+    {
+      text: "Про программирование",
       collapsed: false,
       items: [
         {
@@ -276,37 +286,37 @@ function sidebarFastJs() {
       items: [
         {
           text: "Прототипное наследование",
-          link: "advanced-concepts/prototype-chain"
+          link: "advanced-concepts/prototype-chain",
         },
         {
           text: "Деструктуризация",
-          link: "advanced-concepts/destructuring"
+          link: "advanced-concepts/destructuring",
         },
         {
           text: "Оператор расширения",
-          link: "advanced-concepts/spread"
+          link: "advanced-concepts/spread",
         },
         {
           text: "Опциональная цепочка",
-          link: "advanced-concepts/optional-chaining"
+          link: "advanced-concepts/optional-chaining",
         },
         {
           text: "Оператор объединения с null",
-          link: "advanced-concepts/nullish-coalescing"
+          link: "advanced-concepts/nullish-coalescing",
         },
         {
           text: "Функции высшего порядка",
-          link: "advanced-concepts/higher-order-functions"
+          link: "advanced-concepts/higher-order-functions",
         },
         {
           text: "Замыкания",
-          link: "advanced-concepts/closures"
+          link: "advanced-concepts/closures",
         },
         {
           text: "Хитрости с массивами",
-          link: "advanced-concepts/array-tricks"
+          link: "advanced-concepts/array-tricks",
         },
-      ]
-    }
-  ]
+      ],
+    },
+  ];
 }
