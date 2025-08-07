@@ -3,18 +3,18 @@ layout: home
 
 hero:
   # name: "twep."
-  text: "Жизнь слишком коротка для строгой типизации"
-  tagline: Библиотека js-разработчика (бета)
+  text: "Библиотека JavaScript-разработчика"
+  tagline: Жизнь слишком коротка для строгой типизации
   actions:
     - theme: brand
-      text: Руководства
+      text: Почитать
+      link: /read/about-js/the-weird-history-of-javascript/
+    - theme: alt
+      text: Гайды по JS
       link: /js/links/docs
   image:
     src: /twep-cat.png
     alt: Кот в очках, маскот twep.
-    # - theme: alt
-    #   text: API Examples
-    #   link: /api-examples
 
 # features:
 #   - title: Feature A

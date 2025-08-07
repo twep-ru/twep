@@ -82,12 +82,12 @@ function nav() {
     //   activeMatch: "/odin/",
     // },
     {
-      text: "Чтиво",
-      link: "/read/code-tells-you-how-comments-tell-you-why",
+      text: "Заметки",
+      link: "/read/about-js/the-weird-history-of-javascript/",
       activeMatch: "/read/",
     },
     {
-      text: "JavaScript",
+      text: "Гайды по JS",
       link: "/js/links/docs",
       activeMatch: "/js/",
     },
