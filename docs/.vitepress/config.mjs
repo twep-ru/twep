@@ -343,6 +343,10 @@ function sidebarModernJs() {
           text: "Основы RESTful API",
           link: "ai-app/restful-api/",
         },
+        {
+          text: "Настройка сервера",
+          link: "ai-app/text-to-image-server/",
+        },
       ],
     },
   ];
