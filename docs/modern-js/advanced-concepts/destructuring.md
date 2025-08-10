@@ -7,7 +7,7 @@ theme: Деструктуризация объектов и массивов
 
 # {{ $frontmatter.title}}
 
-<FastJsMeta :level="$frontmatter.level" :theme="$frontmatter.theme"/>
+<ModernJsMeta :level="$frontmatter.level" :theme="$frontmatter.theme"/>
 
 ## Введение
 
@@ -142,4 +142,4 @@ const [, , third] = items;
 
 ## Мем дня
 
-<video playsinline autoplay muted loop width="50%" src="/assets/fast-js/destructuring.mp4" type="video/mp4"/>
+<video playsinline autoplay muted loop width="50%" src="/assets/modern-js/destructuring.mp4" type="video/mp4"/>

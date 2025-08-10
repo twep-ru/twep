@@ -34,7 +34,7 @@ export default defineConfig({
       "/js/": { base: "/js/", items: sidebarjs() },
       "/odin/": { base: "/odin/", items: sidebarOdin() },
       "/read/": { base: "/read/", items: sidebarRead() },
-      "/fast-js/": { base: "/fast-js/", items: sidebarFastJs() },
+      "/modern-js/": { base: "/modern-js/", items: sidebarModernJs() },
     },
 
     docFooter: {
@@ -287,7 +287,7 @@ function sidebarRead() {
   ];
 }
 
-function sidebarFastJs() {
+function sidebarModernJs() {
   return [
     {
       text: "Продвинутые концепции",

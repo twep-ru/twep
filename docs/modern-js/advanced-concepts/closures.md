@@ -7,7 +7,7 @@ theme: Замыкания (Closures) в JavaScript
 
 # {{ $frontmatter.title}}
 
-<FastJsMeta :level="$frontmatter.level" :theme="$frontmatter.theme"/>
+<ModernJsMeta :level="$frontmatter.level" :theme="$frontmatter.theme"/>
 
 ## Что такое замыкание?
 
@@ -98,4 +98,4 @@ counter(); // 3
 
 ## Мем дня
 
-<video playsinline autoplay muted loop width="50%" src="/assets/fast-js/closures.mp4" type="video/mp4"/>
+<video playsinline autoplay muted loop width="50%" src="/assets/modern-js/closures.mp4" type="video/mp4"/>

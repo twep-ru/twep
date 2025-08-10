@@ -7,7 +7,7 @@ theme: Практические приёмы и трюки с массивами
 
 # {{ $frontmatter.title}}
 
-<FastJsMeta :level="$frontmatter.level" :theme="$frontmatter.theme"/>
+<ModernJsMeta :level="$frontmatter.level" :theme="$frontmatter.theme"/>
 
 ## 1. Как создать массив?
 
@@ -200,7 +200,7 @@ const sum = [1, 2, 3].reduce((acc, value) => acc + value, 0); // 6
 
 <img
   loading="lazy"
-  src="/assets/fast-js/array-tricks.jpg"
+  src="/assets/modern-js/array-tricks.jpg"
   alt="Массивы в JavaScript"
   width="70%"
 />

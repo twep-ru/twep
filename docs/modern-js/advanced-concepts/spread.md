@@ -7,7 +7,7 @@ theme: Объединение объектов и массивов с помощ
 
 # {{ $frontmatter.title}}
 
-<FastJsMeta :level="$frontmatter.level" :theme="$frontmatter.theme"/>
+<ModernJsMeta :level="$frontmatter.level" :theme="$frontmatter.theme"/>
 
 ## Введение
 
@@ -160,4 +160,4 @@ const newArr = [...arr1, ...arr2];
 
 ## Мем дня
 
-<video playsinline autoplay muted loop width="50%" src="/assets/fast-js/spread.mp4" type="video/mp4"/>
+<video playsinline autoplay muted loop width="50%" src="/assets/modern-js/spread.mp4" type="video/mp4"/>

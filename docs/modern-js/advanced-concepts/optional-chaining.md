@@ -7,7 +7,7 @@ theme: Опциональная цепочка (Optional Chaining) в JavaScript
 
 # {{ $frontmatter.title}}
 
-<FastJsMeta :level="$frontmatter.level" :theme="$frontmatter.theme"/>
+<ModernJsMeta :level="$frontmatter.level" :theme="$frontmatter.theme"/>
 
 ## Проблема  
 
@@ -84,4 +84,4 @@ logger?.('Сообщение'); // Ничего не произойдёт, ош�
 
 ## Мем дня
 
-<video playsinline autoplay muted loop width="50%" src="/assets/fast-js/optional-chaining.mp4" type="video/mp4"/>
+<video playsinline autoplay muted loop width="50%" src="/assets/modern-js/optional-chaining.mp4" type="video/mp4"/>

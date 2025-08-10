@@ -7,7 +7,7 @@ theme: Оператор объединения с null (Nullish Coalescing) в J
 
 # {{ $frontmatter.title}}
 
-<FastJsMeta :level="$frontmatter.level" :theme="$frontmatter.theme"/>
+<ModernJsMeta :level="$frontmatter.level" :theme="$frontmatter.theme"/>
 
 ## Проблема
   
@@ -159,4 +159,4 @@ let x = (1 && 2) ?? 3;
 
 ## Мем дня
 
-<video playsinline autoplay muted loop width="50%" src="/assets/fast-js/nullish-coalescing.mp4" type="video/mp4"/>
+<video playsinline autoplay muted loop width="50%" src="/assets/modern-js/nullish-coalescing.mp4" type="video/mp4"/>

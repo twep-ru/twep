@@ -7,7 +7,7 @@ theme: Функции высшего порядка (Higher-Order Functions) в 
 
 # {{ $frontmatter.title}}
 
-<FastJsMeta :level="$frontmatter.level" :theme="$frontmatter.theme"/>
+<ModernJsMeta :level="$frontmatter.level" :theme="$frontmatter.theme"/>
 
 ## Введение
 

@@ -7,11 +7,11 @@ theme: Объекты и прототипное наследование в Java
 
 # {{ $frontmatter.title}}
 
-<FastJsMeta :level="$frontmatter.level" :theme="$frontmatter.theme"/>
+<ModernJsMeta :level="$frontmatter.level" :theme="$frontmatter.theme"/>
 
 ## Введение
 
-Добро пожаловать на курс **Fast JS**!  
+Добро пожаловать на курс **Modern JS**!  
 В этом уроке мы углубимся в одну из ключевых тем JavaScript — **объекты и прототипное наследование**. Эти концепции особенно важны для реальной разработки: будь вы нацелены на работу веб-разработчиком или хотите создать свой собственный продукт, понимание объектов и наследования поможет вам писать более эффективный и гибкий код.
 
 ## Что такое объект в JavaScript?
@@ -120,4 +120,4 @@ console.log(Object.getPrototypeOf(dog)); // { dna: "Живое существо"
 
 ## Мем дня
 
-<video playsinline autoplay muted loop width="50%" src="/assets/fast-js/prototype-chain.mp4" type="video/mp4"/>
+<video playsinline autoplay muted loop width="50%" src="/assets/modern-js/prototype-chain.mp4" type="video/mp4"/>

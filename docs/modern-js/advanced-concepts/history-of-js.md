@@ -7,7 +7,7 @@ theme: Как JavaScript эволюционировал в язык, котор�
 
 # {{ $frontmatter.title}}
 
-<FastJsMeta :level="$frontmatter.level" :theme="$frontmatter.theme"/>
+<ModernJsMeta :level="$frontmatter.level" :theme="$frontmatter.theme"/>
 
 ## Посмотрите видео или прочтите статью
 

@@ -4,7 +4,7 @@ import './tailwind.css'
 
 // Мета-информация
 import ArticleMeta from '../components/ArticleMeta.vue';
-import FastJsMeta from '../components/FastJsMeta.vue';
+import ModernJsMeta from '../components/ModernJsMeta.vue';
 
 // Голосования
 import ProjectCard from '../components/ProjectCard.vue';
@@ -20,7 +20,7 @@ export default {
   ...DefaultTheme,
   enhanceApp({ app }) {
     app.component('ArticleMeta', ArticleMeta);
-    app.component('FastJsMeta', FastJsMeta);
+    app.component('ModernJsMeta', ModernJsMeta);
 
     app.component('ProjectCard', ProjectCard);
     app.component('ProjectCardSmall', ProjectCardSmall);
