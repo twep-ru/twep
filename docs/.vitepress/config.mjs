@@ -339,6 +339,10 @@ function sidebarModernJs() {
           text: "Знакомство с проектом",
           link: "ai-app/initial-setup/",
         },
+        {
+          text: "Основы RESTful API",
+          link: "ai-app/restful-api/",
+        },
       ],
     },
   ];
