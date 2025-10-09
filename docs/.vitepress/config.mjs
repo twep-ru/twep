@@ -82,6 +82,11 @@ function nav() {
     //   activeMatch: "/odin/",
     // },
     {
+      text: "Челленджи",
+      link: "/challenges/newbee/linktree/",
+      activeMatch: "/challenges/",
+    },
+    {
       text: "Заметки",
       link: "/read/about-js/the-weird-history-of-javascript/",
       activeMatch: "/read/",
