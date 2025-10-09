@@ -31,7 +31,8 @@ export default defineConfig({
 
     // Ссылки на сайдбары
     sidebar: {
-      "/js/": { base: "/js/", items: sidebarjs() },
+      "/challenges/": { base: "/challenges/", items: sidebarChallenges() },
+      "/js/": { base: "/js/", items: sidebarJs() },
       "/odin/": { base: "/odin/", items: sidebarOdin() },
       "/read/": { base: "/read/", items: sidebarRead() },
       "/modern-js/": { base: "/modern-js/", items: sidebarModernJs() },
@@ -99,7 +100,26 @@ function nav() {
   ];
 }
 
-function sidebarjs() {
+function sidebarChallenges() {
+  return [
+    {
+      text: "Новичок",
+      collapsed: false,
+      items: [
+        {
+          text: "Linktree",
+          link: "newbee/linktree/",
+        },
+        {
+          text: "QR-код",
+          link: "newbee/qr-code/",
+        },
+      ],
+    }
+  ]
+}
+
+function sidebarJs() {
   return [
     {
       text: "Практика",
