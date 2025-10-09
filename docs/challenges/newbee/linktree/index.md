@@ -7,6 +7,8 @@ theme: Знакомство с проектом и настройка фронт
 
 # {{ $frontmatter.title}}
 
+<ChallengesBadges />
+
 <ModernJsMeta :level="$frontmatter.level" :theme="$frontmatter.theme"/>
 
 В этом небольшом проекте вы создадите карточку для публикации ссылок на социальные сети. Вы даже можете персонализировать его под себя и свои ссылки.

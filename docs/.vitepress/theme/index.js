@@ -16,6 +16,9 @@ import LessonOverview from '../components/LessonOverview.vue';
 import LessonKnowledgeCheck from '../components/LessonKnowledgeCheck.vue';
 import LessonAdditionalResources from '../components/LessonAdditionalResources.vue';
 
+// Лейблы
+import ChallengesBadges from '../components/ChallengesBadges.vue';
+
 export default {
   ...DefaultTheme,
   enhanceApp({ app }) {
@@ -29,5 +32,7 @@ export default {
     app.component('LessonOverview', LessonOverview);
     app.component('LessonKnowledgeCheck', LessonKnowledgeCheck);
     app.component('LessonAdditionalResources', LessonAdditionalResources);
+
+    app.component('ChallengesBadges', ChallengesBadges);
   }
 };
