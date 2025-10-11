@@ -11,8 +11,8 @@ const props = defineProps({
 });
 
 const badgeClasses = {
-  html: 'text-rose-600',
-  css: 'text-indigo-400',
+  html: 'text-rose-700',
+  css: 'text-indigo-600',
   js: 'text-amber-500'
 };
 
