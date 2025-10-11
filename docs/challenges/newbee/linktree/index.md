@@ -1,8 +1,6 @@
 ---
 title: Linktree
 description: Создадим аналог Linktree
-level: Начинающий
-theme: Знакомство с проектом и настройка фронтенда
 ---
 
 # {{ $frontmatter.title}}
