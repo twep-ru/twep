@@ -3,7 +3,7 @@ title: Linktree
 description: Создадим аналог Linktree
 ---
 
-# {{ $frontmatter.title}}
+# {{ $frontmatter.title}}  
 
 <ChallengesBadges type="html" />
 <ChallengesBadges type="css" />
