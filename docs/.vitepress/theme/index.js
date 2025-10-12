@@ -1,6 +1,7 @@
 import DefaultTheme from 'vitepress/theme'
 import './style.css'
 import './tailwind.css'
+import './Layout.vue'
 
 // Мета-информация
 import ArticleMeta from '../components/ArticleMeta.vue';
@@ -18,9 +19,11 @@ import LessonAdditionalResources from '../components/LessonAdditionalResources.v
 
 // Лейблы
 import ChallengesBadges from '../components/ChallengesBadges.vue';
+import Layout from './Layout.vue';
 
 export default {
   ...DefaultTheme,
+  Layout,
   enhanceApp({ app }) {
     app.component('ArticleMeta', ArticleMeta);
     app.component('ModernJsMeta', ModernJsMeta);

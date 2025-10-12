@@ -8,6 +8,8 @@ description: Создадим аналог Linktree
 <ChallengesBadges type="html" />
 <ChallengesBadges type="css" />
 
+<Comments />
+
 В этом небольшом проекте вы создадите карточку для публикации ссылок на социальные сети, получится что-то вроде Linktree. Вы даже можете персонализировать его под себя.
 
 ![Linktree](./hero.png)
