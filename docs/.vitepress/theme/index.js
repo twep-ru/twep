@@ -19,7 +19,12 @@ import LessonAdditionalResources from '../components/LessonAdditionalResources.v
 
 // Лейблы
 import ChallengesBadges from '../components/ChallengesBadges.vue';
+
+// Комментарии
 import Layout from './Layout.vue';
+
+// Аккордеон
+import ChallengesAccordion from '../components/ChallengesAccordion.vue';
 
 export default {
   ...DefaultTheme,
@@ -37,5 +42,7 @@ export default {
     app.component('LessonAdditionalResources', LessonAdditionalResources);
 
     app.component('ChallengesBadges', ChallengesBadges);
+
+    app.component('ChallengesAccordion', ChallengesAccordion);
   }
 };
