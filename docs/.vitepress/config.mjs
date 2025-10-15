@@ -107,12 +107,12 @@ function sidebarChallenges() {
       collapsed: false,
       items: [
         {
-          text: "Linktree",
-          link: "newbee/linktree/",
-        },
-        {
           text: "QR-код",
           link: "newbee/qr-code/",
+        },
+        {
+          text: "Linktree",
+          link: "newbee/linktree/",
         },
       ],
     }
