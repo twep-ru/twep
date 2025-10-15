@@ -3,9 +3,9 @@ import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
   // head
-  title: "twep.",
-  description: "Жизнь слишком коротка для строгой типизации",
-  lang: "ru-RU",
+  lang: 'ru-RU',
+  title: "twep. // практика вёрстки и фронтенда на реальных задачах",
+  description: "Развивайте свои навыки фронтенд-разработки, создавая реальные проекты. Решайте практические задачи по HTML, CSS и JavaScript, работая с профессиональными дизайн-макетами.",
   head: [["link", { rel: "icon", href: "/favicon.svg" }]],
 
   // Чистые ссылки
