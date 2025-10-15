@@ -111,6 +111,10 @@ function sidebarChallenges() {
           link: "newbee/qr-code/",
         },
         {
+          text: "Карточка блога",
+          link: "newbee/blog-card/",
+        },
+        {
           text: "Linktree",
           link: "newbee/linktree/",
         },
