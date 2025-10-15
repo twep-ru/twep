@@ -4,9 +4,17 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineConfig({
   // head
   lang: 'ru-RU',
-  title: "twep. // практика вёрстки и фронтенда на реальных задачах",
+  title: "twep. // проекты для портфолио, которые впечатляют работодателей",
   description: "Развивайте свои навыки фронтенд-разработки, создавая реальные проекты. Решайте практические задачи по HTML, CSS и JavaScript, работая с профессиональными дизайн-макетами.",
-  head: [["link", { rel: "icon", href: "/favicon.svg" }]],
+  head: [
+    ["link", { rel: "icon", href: "/favicon.svg" }],
+    ['meta', { property: 'og:title', content: 'twep. // проекты для портфолио, которые впечатляют работодателей' }],
+    ['meta', { property: 'og:description', content: 'Практические задания по вёрстке и фронтенду, основанные на реальных рабочих процессах' }],
+    ['meta', { property: 'og:type', content: 'website' }],
+    ['meta', { property: 'og:url', content: 'https://twep.ru/' }],
+    ['meta', { property: 'og:image', content: 'https://www.twep.ru/twep-og.png' }],
+    ['meta', { property: 'og:locale', content: 'ru_RU' }],
+  ],
 
   // Чистые ссылки
   cleanUrls: true,
@@ -84,7 +92,7 @@ function nav() {
     // },
     {
       text: "Челленджи",
-      link: "/challenges/newbee/linktree/",
+      link: "/challenges/newbee/qr-code/",
       activeMatch: "/challenges/",
     },
     {

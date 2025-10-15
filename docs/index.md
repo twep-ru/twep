@@ -3,12 +3,12 @@ layout: home
 
 hero:
   # name: "twep."
-  text: "Библиотека JavaScript-разработчика"
-  tagline: Жизнь слишком коротка для строгой типизации
+  text: "Фронтенд-задачи, которые развивают реальные навыки"
+  tagline: Профессиональные задания, максимально приближенные к реальной разработке
   actions:
     - theme: brand
-      text: Почитать
-      link: /read/about-js/the-weird-history-of-javascript/
+      text: Смотреть челленджи
+      link: /challenges/newbee/qr-code/
     - theme: alt
       text: Гайды по JS
       link: /js/links/docs
