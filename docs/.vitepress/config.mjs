@@ -140,6 +140,10 @@ function sidebarChallenges() {
           text: "Бенто-компоненты",
           link: "junior/bento-components/",
         },
+        {
+          text: "Лендинг для стартапа",
+          link: "junior/startup-landing/",
+        },
       ],
     }
   ]
