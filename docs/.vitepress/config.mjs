@@ -127,6 +127,16 @@ function sidebarChallenges() {
           link: "newbee/linktree/",
         },
       ],
+    },
+    {
+      text: "Джун",
+      collapsed: false,
+      items: [
+        {
+          text: "Бенто-сетка",
+          link: "junior/bento-grid/",
+        },
+      ],
     }
   ]
 }
