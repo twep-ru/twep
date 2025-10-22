@@ -136,6 +136,10 @@ function sidebarChallenges() {
           text: "Бенто-сетка",
           link: "junior/bento-grid/",
         },
+        {
+          text: "Бенто-компоненты",
+          link: "junior/bento-components/",
+        },
       ],
     }
   ]
