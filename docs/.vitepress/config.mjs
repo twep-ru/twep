@@ -145,7 +145,17 @@ function sidebarChallenges() {
           link: "junior/startup-landing/",
         },
       ],
-    }
+    },
+    {
+      text: "Средний",
+      collapsed: false,
+      items: [
+        {
+          text: "Минималистичный сайт-портфолио",
+          link: "intermediate/minimalist-portfolio/",
+        },
+      ],
+    },
   ]
 }
 
