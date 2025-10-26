@@ -158,6 +158,10 @@ function sidebarChallenges() {
           text: "SaaS-лендинг",
           link: "intermediate/saas-landing/",
         },
+        {
+          text: "Генератор паролей",
+          link: "intermediate/password-generator/",
+        },
       ],
     },
   ]
