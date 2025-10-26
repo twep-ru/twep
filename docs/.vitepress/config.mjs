@@ -154,6 +154,10 @@ function sidebarChallenges() {
           text: "Минималистичный сайт-портфолио",
           link: "intermediate/minimalist-portfolio/",
         },
+        {
+          text: "SaaS-лендинг",
+          link: "intermediate/saas-landing/",
+        },
       ],
     },
   ]
