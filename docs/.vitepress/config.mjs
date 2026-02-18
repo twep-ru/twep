@@ -126,6 +126,10 @@ function sidebarChallenges() {
           text: "Linktree",
           link: "newbee/linktree/",
         },
+        {
+          text: "Чек",
+          link: "newbee/receipt-page/",
+        },
       ],
     },
     {
