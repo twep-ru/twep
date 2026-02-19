@@ -1,6 +1,10 @@
 ---
 title: QR-код
 description: Создадим компонент куар-кода
+og:
+  title: QR-код
+  description: Создадим компонент куар-кода
+  image: ./hero.jpg
 ---
 
 # {{ $frontmatter.title}}
@@ -13,7 +17,7 @@ description: Создадим компонент куар-кода
 
 ### Макет
 
-[Макет в Figma](https://www.figma.com/community/file/1230752484447419877/qr-code-component-challenge-frontend-mentor) (QR code component)  
+[Макет в Figma](https://www.figma.com/community/file/1230752484447419877/qr-code-component-challenge-frontend-mentor) (QR code component)
 
 ## 📝 Задача
 
