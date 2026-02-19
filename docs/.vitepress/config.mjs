@@ -1,7 +1,7 @@
 import { defineConfig } from "vitepress";
 import tailwindcss from "@tailwindcss/vite";
 import { sidebarChallenges } from "./nav/challenges";
-import { sidebarJs, sidebarRead } from "./nav/challenges";
+import { sidebarJs, sidebarRead } from "./nav/sidebars";
 import { nav } from "./nav/nav";
 
 export default defineConfig({

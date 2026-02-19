@@ -34,3 +34,6 @@ reports/
 # Vitepress
 docs/.vitepress/cache
 docs/.vitepress/dist
+
+# Qwen Code
+$null
