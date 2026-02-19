@@ -1,10 +1,10 @@
 <script setup>
 const props = defineProps({
-  type: {
-    type: String,
+  types: {
+    type: Array,
     required: true,
     validator(value) {
-      return ['html', 'css', 'js'].includes(value.toLowerCase());
+      return Array.isArray(value) && value.every(t => ['html', 'css', 'js'].includes(t.toLowerCase()));
     }
   }
 });
@@ -20,13 +20,15 @@ const text = {
   css: 'CSS',
   js: 'JS'
 };
-
-const badgeClass = badgeClasses[props.type.toLowerCase()];
-const badgeText = text[props.type.toLowerCase()];
 </script>
 
 <template>
-  <span class="inline-block mt-4 mr-2 text-lg font-bold" :class="badgeClass">
-    {{ badgeText }}
+  <span
+    v-for="tech in types"
+    :key="tech"
+    class="inline-block mt-4 mr-2 text-lg font-bold"
+    :class="badgeClasses[tech.toLowerCase()]"
+  >
+    {{ text[tech.toLowerCase()] }}
   </span>
 </template>

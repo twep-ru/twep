@@ -5,9 +5,7 @@ description: Создадим мобильное меню с анимацией
 
 # {{ $frontmatter.title}}
 
-<ChallengesBadges type="html" />
-<ChallengesBadges type="css" />
-<ChallengesBadges type="js" />
+<ChallengesBadges :types="['html', 'css', 'js']" />
 
 ![QR-код](./hero.jpg)
 

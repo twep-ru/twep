@@ -5,9 +5,7 @@ description: Создадим многостраничный сайт-портф
 
 # {{ $frontmatter.title}}
 
-<ChallengesBadges type="html" />
-<ChallengesBadges type="css" />
-<ChallengesBadges type="js" />
+<ChallengesBadges :types="['html', 'css', 'js']" />
 
 Этот многостраничный сайт-портфолио станет отличным вызовом, чтобы проверить ваши универсальные навыки фронтенд-разработки. Вы даже сможете использовать этот сайт в качестве собственного портфолио, когда завершите его!
 

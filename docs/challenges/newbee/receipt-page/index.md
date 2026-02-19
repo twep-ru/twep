@@ -5,8 +5,7 @@ description: Создадим онлайн-чек из магазина
 
 # {{ $frontmatter.title}}
 
-<ChallengesBadges type="html" />
-<ChallengesBadges type="css" />
+<ChallengesBadges :types="['html', 'css']" />
 
 Это задание поможет вам попрактиковаться в использовании семантических тегов. Подумайте, какие элементы лучше всего подходят для разметки каждой части страницы.
 

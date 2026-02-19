@@ -5,8 +5,7 @@ description: Сделаем простой лендинг-пейдж для ст
 
 # {{ $frontmatter.title}}
 
-<ChallengesBadges type="html" />
-<ChallengesBadges type="css" />
+<ChallengesBadges :types="['html', 'css']" />
 
 Это станет отличной проверкой ваших навыков HTML и CSS. В дизайне используются распространённые паттерны вёрстки, с которыми вы, скорее всего, столкнётесь в будущих проектах, а также интересные детали.
 

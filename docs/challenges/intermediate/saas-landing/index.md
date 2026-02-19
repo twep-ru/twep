@@ -5,9 +5,7 @@ description: Создадим SaaS-лендинг (Software as a Service)
 
 # {{ $frontmatter.title}}
 
-<ChallengesBadges type="html" />
-<ChallengesBadges type="css" />
-<ChallengesBadges type="js" />
+<ChallengesBadges :types="['html', 'css', 'js']" />
 
 Это задание станет отличной проверкой ваших навыков вёрстки. Если вы готовы перейти от задач для начинающих к более сложным — это отличный следующий шаг.
 

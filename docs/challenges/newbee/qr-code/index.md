@@ -5,8 +5,7 @@ description: Создадим компонент куар-кода
 
 # {{ $frontmatter.title}}
 
-<ChallengesBadges type="html" />
-<ChallengesBadges type="css" />
+<ChallengesBadges :types="['html', 'css']" />
 
 Идеальное первое задание, если вы только начинаете изучать HTML и CSS. Макет карточки не изменяется, поэтому это задание отлично подойдёт, если вы ещё не изучали создание адаптивных макетов.
 

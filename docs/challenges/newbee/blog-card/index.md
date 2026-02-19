@@ -5,8 +5,7 @@ description: Создадим карточку блога, превью
 
 # {{ $frontmatter.title}}
 
-<ChallengesBadges type="html" />
-<ChallengesBadges type="css" />
+<ChallengesBadges :types="['html', 'css']" />
 
 Это задание, использующее только HTML и CSS, идеально подойдёт новичкам, которые хотят освоить основы HTML и CSS, такие как структура HTML-документа и модель блоков (box model).
 

@@ -5,8 +5,7 @@ description: Практика верстки bento grid
 
 # {{ $frontmatter.title}}
 
-<ChallengesBadges type="html" />
-<ChallengesBadges type="css" />
+<ChallengesBadges :types="['html', 'css']" />
 
 Этот набор компонентов в бенто-стиле содержит в дизайне несколько интересных задач по CSS. Если вы хотите проверить свои навыки в CSS — это отличный проект для вас!
 

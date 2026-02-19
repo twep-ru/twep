@@ -5,8 +5,7 @@ description: Практика верстки bento grid
 
 # {{ $frontmatter.title}}
 
-<ChallengesBadges type="html" />
-<ChallengesBadges type="css" />
+<ChallengesBadges :types="['html', 'css']" />
 
 Это задание станет отличной практикой для всех, кто хочет проверить свои навыки работы с CSS Grid. Grid — это настолько мощное дополнение к CSS, что обязательно стоит освоить его!
 

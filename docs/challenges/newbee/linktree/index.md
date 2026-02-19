@@ -5,8 +5,7 @@ description: Создадим аналог Linktree
 
 # {{ $frontmatter.title}}
 
-<ChallengesBadges type="html" />
-<ChallengesBadges type="css" />
+<ChallengesBadges :types="['html', 'css']" />
 
 В этом небольшом проекте вы создадите карточку для публикации ссылок на социальные сети, получится что-то вроде Linktree. Вы даже можете персонализировать его под себя.
 
