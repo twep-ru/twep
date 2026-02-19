@@ -1,4 +1,3 @@
-<!-- .vitepress/theme/components/TechBadge.vue -->
 <script setup>
 const props = defineProps({
   type: {
