@@ -5,7 +5,7 @@
     <div
       class="relative overflow-hidden mb-2 rounded-2xl outline outline-stone-100 transition-all duration-300 ease-in-out"
       data-image>
-      <img :src="image" :alt="title" class="w-full h-auto object-cover" />
+      <img :src="image" :alt="title" loading="lazy" class="w-full h-auto object-cover" />
       <div
         class="absolute left-3 -bottom-2 text-4xl font-bold italic leading-10 text-stone-900 stroke-stone-100 text-stroke transition-transform duration-300 ease-in-out"
         data-number>
