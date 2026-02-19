@@ -8,7 +8,7 @@ hero:
   actions:
     - theme: brand
       text: Смотреть челленджи
-      link: /challenges/newbee/qr-code/
+      link: /challenges/newbie/qr-code/
     - theme: alt
       text: Гайды по JS
       link: /js/links/docs

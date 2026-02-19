@@ -7,27 +7,27 @@ function sidebarChallenges() {
       items: [
         {
           text: "QR-код",
-          link: "newbee/qr-code/",
+          link: "newbie/qr-code/",
         },
         {
           text: "Карточка блога",
-          link: "newbee/blog-card/",
+          link: "newbie/blog-card/",
         },
         {
           text: "Linktree",
-          link: "newbee/linktree/",
+          link: "newbie/linktree/",
         },
         {
           text: "Чек",
-          link: "newbee/receipt-page/",
+          link: "newbie/receipt-page/",
         },
         {
           text: "Погодный виджет",
-          link: "newbee/weather-widget/",
+          link: "newbie/weather-widget/",
         },
         {
           text: "Адаптивная таблица",
-          link: "newbee/responsive-table/",
+          link: "newbie/responsive-table/",
         },
       ],
     },
