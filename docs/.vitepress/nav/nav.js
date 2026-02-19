@@ -8,7 +8,7 @@ function nav() {
     // },
     {
       text: "Челленджи",
-      link: "/challenges/newbee/qr-code/",
+      link: "/challenges/newbie/qr-code/",
       activeMatch: "/challenges/",
     },
     {
