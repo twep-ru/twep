@@ -130,6 +130,14 @@ function sidebarChallenges() {
           text: "Чек",
           link: "newbee/receipt-page/",
         },
+        {
+          text: "Погодный виджет",
+          link: "newbee/weather-widget/",
+        },
+        {
+          text: "Адаптивная таблица",
+          link: "newbee/responsive-table/",
+        },
       ],
     },
     {
@@ -147,6 +155,10 @@ function sidebarChallenges() {
         {
           text: "Лендинг для стартапа",
           link: "junior/startup-landing/",
+        },
+        {
+          text: "Мобильный бургер",
+          link: "junior/hamburger/",
         },
       ],
     },
