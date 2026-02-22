@@ -37,6 +37,10 @@ function sidebarChallenges() {
           text: "Газетная полоса",
           link: "newbie/magazine/",
         },
+        {
+          text: "Постер в швейцарском стиле",
+          link: "newbie/poster/",
+        },
       ],
     },
     {
