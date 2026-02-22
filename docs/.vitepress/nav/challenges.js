@@ -29,6 +29,10 @@ function sidebarChallenges() {
           text: "Адаптивная таблица",
           link: "newbie/responsive-table/",
         },
+        {
+          text: "Клавиатура",
+          link: "newbie/keyboard/",
+        },
       ],
     },
     {
