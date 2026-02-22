@@ -33,6 +33,10 @@ function sidebarChallenges() {
           text: "Клавиатура",
           link: "newbie/keyboard/",
         },
+        {
+          text: "Газетная полоса",
+          link: "newbie/magazine/",
+        },
       ],
     },
     {
