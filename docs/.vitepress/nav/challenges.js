@@ -63,6 +63,10 @@ function sidebarChallenges() {
           text: "Мобильный бургер",
           link: "junior/hamburger/",
         },
+        {
+          text: "Профиль в Инсте",
+          link: "junior/insta/",
+        },
       ],
     },
     {
