@@ -41,6 +41,10 @@ function sidebarChallenges() {
           text: "Постер в швейцарском стиле",
           link: "newbie/poster/",
         },
+        {
+          text: "Аккордеон FAQ",
+          link: "newbie/faq/",
+        },
       ],
     },
     {
