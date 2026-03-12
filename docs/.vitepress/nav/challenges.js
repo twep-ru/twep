@@ -45,6 +45,10 @@ function sidebarChallenges() {
           text: "Аккордеон FAQ",
           link: "newbie/faq/",
         },
+        {
+          text: "ИИ-планировщик питания",
+          link: "newbie/recipe-landing/",
+        },
       ],
     },
     {

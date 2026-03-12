@@ -11,7 +11,7 @@ description: Реализация интерактивного списка во
 
 Этот компонент научит вас работать с состояниями элементов, доступностью (A11Y) и управлением высотой блоков в CSS.
 
-![Клавиатура](./hero.png)
+![FAQ](./hero.png)
 
 ## 📝 Задача
 
@@ -25,7 +25,7 @@ description: Реализация интерактивного списка во
 
 ### Макет
 
-[Макет в Figma](https://www.figma.com/community/file/1314733281691503679/faq-accordion)
+[Макет в Figma](https://www.figma.com/community/file/1314733281691503679/faq-accordion) (FAQ accordion)
 
 ## 💡 Идеи для практики
 
