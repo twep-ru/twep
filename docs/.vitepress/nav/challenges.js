@@ -53,6 +53,10 @@ function sidebarChallenges() {
           text: "Результаты теста",
           link: "newbie/results/",
         },
+        {
+          text: "Карточка товара Nike",
+          link: "newbie/product-card/",
+        },
       ],
     },
     {
