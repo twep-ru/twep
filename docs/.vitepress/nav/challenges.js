@@ -49,6 +49,10 @@ function sidebarChallenges() {
           text: "ИИ-планировщик питания",
           link: "newbie/recipe-landing/",
         },
+        {
+          text: "Результаты теста",
+          link: "newbie/results/",
+        },
       ],
     },
     {
