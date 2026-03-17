@@ -61,6 +61,10 @@ function sidebarChallenges() {
           text: "Лендинг сервиса Soundtrack",
           link: "newbie/soundtrack/",
         },
+        {
+          text: "Виджет рейтинга",
+          link: "newbie/rating/",
+        },
       ],
     },
     {
