@@ -57,6 +57,10 @@ function sidebarChallenges() {
           text: "Карточка товара Nike",
           link: "newbie/product-card/",
         },
+        {
+          text: "Лендинг сервиса Soundtrack",
+          link: "newbie/soundtrack/",
+        },
       ],
     },
     {
