@@ -1,6 +1,4 @@
-﻿<div align="center">
-
-# twep.
+﻿# twep.
 
 ## О проекте
 
@@ -10,11 +8,7 @@
 [![Telegram](https://img.shields.io/badge/Telegram-@twepru-blue?style=flat-square&logo=telegram)](https://t.me/twepru)
 [![VK](https://img.shields.io/badge/VK-twepru-0077FF?style=flat-square&logo=vk)](https://vkvideo.ru/@twepru)
 
-<br/>
-
 ![Превью платформы twep.](docs/public/preview.png)
-
-</div>
 
 ## Ключевые особенности
 
