@@ -8,8 +8,14 @@ export default defineConfig({
   // head
   lang: 'ru-RU',
   title: 'twep. // проекты для портфолио, которые впечатляют работодателей',
+  titleTemplate: ':title | twep.',
   description:
     'Развивайте свои навыки фронтенд-разработки, создавая реальные проекты. Решайте практические задачи по HTML, CSS и JavaScript, работая с профессиональными дизайн-макетами.',
+
+  sitemap: {
+    hostname: 'https://twep.ru',
+  },
+
   head: [
     ['link', { rel: 'icon', href: '/favicon.svg' }],
     [
@@ -35,13 +41,34 @@ export default defineConfig({
       { property: 'og:image', content: 'https://www.twep.ru/twep-og.png' },
     ],
     ['meta', { property: 'og:locale', content: 'ru_RU' }],
+    ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
+    [
+      'meta',
+      {
+        name: 'twitter:title',
+        content:
+          'twep. // проекты для портфолио, которые впечатляют работодателей',
+      },
+    ],
+    [
+      'meta',
+      {
+        name: 'twitter:description',
+        content:
+          'Практические задания по вёрстке и фронтенду, основанные на реальных рабочих процессах',
+      },
+    ],
+    [
+      'meta',
+      { name: 'twitter:image', content: 'https://www.twep.ru/twep-og.png' },
+    ],
   ],
 
   // Чистые ссылки
   cleanUrls: true,
 
   // Настройки темы
-  appearance: false,
+  appearance: true,
   markdown: {
     lazyLoading: true,
   },
@@ -62,6 +89,31 @@ export default defineConfig({
     sidebar: {
       '/challenges/': { base: '/challenges/', items: sidebarChallenges() },
       '/js/': { base: '/js/', items: sidebarJs() },
+    },
+
+    search: {
+      provider: 'local',
+      options: {
+        locales: {
+          root: {
+            translations: {
+              button: {
+                buttonText: 'Поиск',
+                buttonAriaLabel: 'Поиск по сайту',
+              },
+              modal: {
+                noResultsText: 'Ничего не найдено по запросу',
+                resetButtonTitle: 'Сбросить поиск',
+                footer: {
+                  selectText: 'выбрать',
+                  navigateText: 'навигация',
+                  closeText: 'закрыть',
+                },
+              },
+            },
+          },
+        },
+      },
     },
 
     docFooter: {
