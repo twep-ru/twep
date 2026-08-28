@@ -2,16 +2,18 @@
 import { useData } from 'vitepress'
 import { onMounted, nextTick, watch, ref } from 'vue'
 
-const { page } = useData()
+const { page, isDark } = useData()
 const isLoading = ref(true)
+
+const getTheme = () => (isDark.value ? 'dark' : 'light')
 
 const loadGiscus = () => {
   isLoading.value = true
-  
+
   // Очищаем предыдущий контент
-  const existingGiscus = document.querySelector('.giscus')
-  if (existingGiscus) {
-    existingGiscus.innerHTML = ''
+  const container = document.querySelector('.giscus')
+  if (container) {
+    container.innerHTML = ''
   }
 
   // Создаем скрипт для загрузки Giscus
@@ -26,7 +28,7 @@ const loadGiscus = () => {
   script.setAttribute('data-reactions-enabled', '1')
   script.setAttribute('data-emit-metadata', '0')
   script.setAttribute('data-input-position', 'top')
-  script.setAttribute('data-theme', 'preferred_color_scheme')
+  script.setAttribute('data-theme', getTheme())
   script.setAttribute('data-lang', 'ru')
   script.setAttribute('data-loading', 'lazy')
   script.setAttribute('crossorigin', 'anonymous')
@@ -43,7 +45,6 @@ const loadGiscus = () => {
   }
 
   // Добавляем скрипт в контейнер
-  const container = document.querySelector('.giscus')
   if (container) {
     container.appendChild(script)
   }
@@ -55,12 +56,32 @@ onMounted(() => {
   })
 })
 
-// Перезагружаем Giscus при смене страницы
-watch(() => page.value.relativePath, () => {
-  nextTick(() => {
-    loadGiscus()
-  })
+// Обновляем тему Giscus при переключении темы сайта
+watch(isDark, (val) => {
+  const iframe = document.querySelector('iframe.giscus-frame')
+  if (iframe && iframe.contentWindow) {
+    iframe.contentWindow.postMessage(
+      {
+        giscus: {
+          setConfig: {
+            theme: val ? 'dark' : 'light',
+          },
+        },
+      },
+      'https://giscus.app'
+    )
+  }
 })
+
+// Перезагружаем Giscus при смене страницы
+watch(
+  () => page.value.relativePath,
+  () => {
+    nextTick(() => {
+      loadGiscus()
+    })
+  }
+)
 </script>
 
 <template>

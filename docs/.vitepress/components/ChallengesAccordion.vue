@@ -10,21 +10,22 @@ function toggle(index) {
 </script>
 
 <template>
-  <div class="space-y-3">
+  <div class="faq-accordion">
     <div
       v-for="(item, index) in faqItems"
       :key="index"
-      class="border border-gray-200 dark:border-neutral-800 p-4 rounded-lg overflow-hidden bg-white dark:bg-neutral-900/50"
+      class="faq-item"
+      :class="{ 'is-open': openIndex === index }"
     >
       <!-- Вопрос -->
       <button
-        class="flex justify-between items-center w-full p-2 text-left bg-transparent transition-colors"
+        class="faq-question"
         @click="toggle(index)"
         :aria-expanded="openIndex === index"
       >
-        <span class="font-medium text-gray-900 dark:text-gray-100">{{ item.question }}</span>
+        <span class="faq-question-text">{{ item.question }}</span>
         <svg
-          class="w-5 h-5 text-gray-500 transition-transform duration-200"
+          class="faq-icon"
           :class="{ 'rotate-180': openIndex === index }"
           fill="none"
           stroke="currentColor"
@@ -37,9 +38,75 @@ function toggle(index) {
       <!-- Ответ -->
       <div
         v-show="openIndex === index"
-        class="pt-3 px-2 text-gray-600 dark:text-neutral-300 leading-relaxed text-sm"
+        class="faq-answer"
         v-html="item.answer"
       ></div>
     </div>
   </div>
 </template>
+
+<style scoped>
+.faq-accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.faq-item {
+  border: 1px solid var(--vp-c-divider);
+  background-color: var(--vp-c-bg-soft);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: border-color 0.25s, background-color 0.25s;
+}
+
+.faq-item:hover {
+  border-color: var(--vp-c-brand-1);
+}
+
+.faq-question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1rem 1.25rem;
+  text-align: left;
+  background: transparent;
+  cursor: pointer;
+  font-weight: 500;
+  color: var(--vp-c-text-1);
+  transition: color 0.25s;
+}
+
+.faq-question:hover {
+  color: var(--vp-c-brand-1);
+}
+
+.faq-question-text {
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 600;
+}
+
+.faq-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: var(--vp-c-text-2);
+  flex-shrink: 0;
+  margin-left: 1rem;
+  transition: transform 0.25s ease;
+}
+
+.faq-icon.rotate-180 {
+  transform: rotate(180deg);
+}
+
+.faq-answer {
+  padding: 0.75rem 1.25rem 1.25rem;
+  color: var(--vp-c-text-2);
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  border-top: 1px solid var(--vp-c-divider);
+}
+</style>
