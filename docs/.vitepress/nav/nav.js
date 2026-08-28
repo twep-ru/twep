@@ -1,11 +1,6 @@
 // Навигация в шапке сайта
 function nav() {
   return [
-    // {
-    //   text: "The Odin Project",
-    //   link: "/odin/articles/becoming-top",
-    //   activeMatch: "/odin/",
-    // },
     {
       text: "Челленджи",
       link: "/challenges/newbie/qr-code/",

@@ -44,7 +44,6 @@ export default defineConfig({
     sidebar: {
       "/challenges/": { base: "/challenges/", items: sidebarChallenges() },
       "/js/": { base: "/js/", items: sidebarJs() },
-      // "/odin/": { base: "/odin/", items: sidebarOdin() },
     },
 
     docFooter: {
