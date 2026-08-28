@@ -5,7 +5,6 @@ import './Layout.vue'
 
 // Мета-информация
 import ArticleMeta from '../components/ArticleMeta.vue';
-import ModernJsMeta from '../components/ModernJsMeta.vue';
 
 // Карточки проектов
 import ProjectCard from '../components/ProjectCard.vue';
@@ -30,7 +29,6 @@ export default {
   Layout,
   enhanceApp({ app }) {
     app.component('ArticleMeta', ArticleMeta);
-    app.component('ModernJsMeta', ModernJsMeta);
 
     app.component('ProjectCard', ProjectCard);
     app.component('ProjectCardSmall', ProjectCardSmall);
