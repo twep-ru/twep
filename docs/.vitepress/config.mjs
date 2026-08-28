@@ -58,6 +58,13 @@ export default defineConfig({
     returnToTopLabel: "Наверх",
     sidebarMenuLabel: "Меню",
 
+    notFound: {
+      title: "Страница не найдена",
+      quote: "Похоже, вы перешли по неверной ссылке или запрашиваемая страница была удалена.",
+      linkLabel: "Перейти на главную",
+      linkText: "Вернуться на главную",
+    },
+
     footer: {
       message: "twep.",
       copyright: "2025",
