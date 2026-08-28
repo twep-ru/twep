@@ -15,12 +15,23 @@ hero:
   image:
     src: /twep-cat.png
     alt: Кот в очках, маскот twep.
-
-# features:
-#   - title: Feature A
-#     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-#   - title: Feature B
-#     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-#   - title: Feature C
-#     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+features:
+  - icon: 🎨
+    title: Профессиональные макеты в Figma
+    details: Каждый челлендж сопровождается качественным дизайн-макетом, приближенным к реальным рабочим задачам.
+  - icon: 💼
+    title: Сильное портфолио
+    details: Создавайте проекты, которые впечатлят работодателей — от стильных UI-компонентов до полноценных лендингов.
+  - icon: 📈
+    title: Градация сложности
+    details: Задачи разделены на уровни «Новичок», «Джун» и «Средний» для плавного и уверенного профессионального роста.
+  - icon: ⚡
+    title: Свобода выбора технологий
+    details: Верстайте на чистом HTML, CSS и JavaScript или применяйте Tailwind, React, Vue и другие современные инструменты.
+  - icon: 📱
+    title: Адаптивность и чистый код
+    details: Прокачивайте навыки mobile-first вёрстки, семантики, доступности и правильной структуры стилей.
+  - icon: 🚀
+    title: Только реальная практика
+    details: Никакой скучной теории и лишней «воды» — берите макет, изучайте задачу и сразу пишите код.
 ---
