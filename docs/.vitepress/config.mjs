@@ -1,7 +1,7 @@
 import { defineConfig } from "vitepress";
 import tailwindcss from "@tailwindcss/vite";
 import { sidebarChallenges } from "./nav/challenges";
-import { sidebarJs, sidebarRead } from "./nav/sidebars";
+import { sidebarJs } from "./nav/sidebars";
 import { nav } from "./nav/nav";
 
 export default defineConfig({
@@ -44,7 +44,6 @@ export default defineConfig({
     sidebar: {
       "/challenges/": { base: "/challenges/", items: sidebarChallenges() },
       "/js/": { base: "/js/", items: sidebarJs() },
-      "/read/": { base: "/read/", items: sidebarRead() },
       // "/odin/": { base: "/odin/", items: sidebarOdin() },
       // "/modern-js/": { base: "/modern-js/", items: sidebarModernJs() },
     },

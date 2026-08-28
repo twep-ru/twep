@@ -17,4 +17,4 @@ theme: Как JavaScript эволюционировал в язык, котор�
 
 ### Статья
 
-[Странная история JavaScript](/read/about-js/the-weird-history-of-javascript/)
+[Странная история JavaScript](https://stuffcheck-eta.vercel.app/blog/the-weird-history-of-javascript)

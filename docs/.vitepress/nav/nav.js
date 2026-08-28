@@ -13,8 +13,7 @@ function nav() {
     },
     {
       text: "Заметки",
-      link: "/read/about-js/the-weird-history-of-javascript/",
-      activeMatch: "/read/",
+      link: "https://stuffcheck-eta.vercel.app/",
     },
     {
       text: "Гайды по JS",

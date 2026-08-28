@@ -62,44 +62,6 @@ function sidebarJs() {
   ];
 }
 
-// Заметки
-function sidebarRead() {
-  return [
-    {
-      text: "Про JavaScript",
-      collapsed: false,
-      items: [
-        {
-          text: "Странная история JavaScript",
-          link: "about-js/the-weird-history-of-javascript/",
-        },
-      ],
-    },
-    {
-      text: "Про программирование",
-      collapsed: false,
-      items: [
-        {
-          text: "Код говорит как, комментарии — почему",
-          link: "code-tells-you-how-comments-tell-you-why",
-        },
-        {
-          text: "Программирование без комментариев",
-          link: "coding-without-comments",
-        },
-        {
-          text: "Код как документация",
-          link: "code-as-documentation",
-        },
-        {
-          text: "Каскадные методы для выразительности",
-          link: "cascading-methods-for-expressiveness",
-        },
-      ],
-    },
-  ];
-}
-
 // Один
 function sidebarOdin() {
   return [
@@ -260,4 +222,4 @@ function sidebarModernJs() {
   ];
 }
 
-export { sidebarJs, sidebarRead };
+export { sidebarJs };
