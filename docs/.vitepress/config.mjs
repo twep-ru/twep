@@ -1,21 +1,39 @@
-import { defineConfig } from "vitepress";
-import tailwindcss from "@tailwindcss/vite";
-import { sidebarChallenges } from "./nav/challenges";
-import { sidebarJs } from "./nav/sidebars";
-import { nav } from "./nav/nav";
+import { defineConfig } from 'vitepress'
+import tailwindcss from '@tailwindcss/vite'
+import { sidebarChallenges } from './nav/challenges'
+import { sidebarJs } from './nav/sidebars'
+import { nav } from './nav/nav'
 
 export default defineConfig({
   // head
   lang: 'ru-RU',
-  title: "twep. // проекты для портфолио, которые впечатляют работодателей",
-  description: "Развивайте свои навыки фронтенд-разработки, создавая реальные проекты. Решайте практические задачи по HTML, CSS и JavaScript, работая с профессиональными дизайн-макетами.",
+  title: 'twep. // проекты для портфолио, которые впечатляют работодателей',
+  description:
+    'Развивайте свои навыки фронтенд-разработки, создавая реальные проекты. Решайте практические задачи по HTML, CSS и JavaScript, работая с профессиональными дизайн-макетами.',
   head: [
-    ["link", { rel: "icon", href: "/favicon.svg" }],
-    ['meta', { property: 'og:title', content: 'twep. // проекты для портфолио, которые впечатляют работодателей' }],
-    ['meta', { property: 'og:description', content: 'Практические задания по вёрстке и фронтенду, основанные на реальных рабочих процессах' }],
+    ['link', { rel: 'icon', href: '/favicon.svg' }],
+    [
+      'meta',
+      {
+        property: 'og:title',
+        content:
+          'twep. // проекты для портфолио, которые впечатляют работодателей',
+      },
+    ],
+    [
+      'meta',
+      {
+        property: 'og:description',
+        content:
+          'Практические задания по вёрстке и фронтенду, основанные на реальных рабочих процессах',
+      },
+    ],
     ['meta', { property: 'og:type', content: 'website' }],
     ['meta', { property: 'og:url', content: 'https://twep.ru/' }],
-    ['meta', { property: 'og:image', content: 'https://www.twep.ru/twep-og.png' }],
+    [
+      'meta',
+      { property: 'og:image', content: 'https://www.twep.ru/twep-og.png' },
+    ],
     ['meta', { property: 'og:locale', content: 'ru_RU' }],
   ],
 
@@ -29,9 +47,9 @@ export default defineConfig({
   },
   themeConfig: {
     logo: {
-      light: "/twep-logotype.svg",
-      dark: "/twep-logotype-dark.svg",
-      logoAlt: "twep.",
+      light: '/twep-logotype.svg',
+      dark: '/twep-logotype-dark.svg',
+      logoAlt: 'twep.',
     },
     siteTitle: false,
 
@@ -42,49 +60,50 @@ export default defineConfig({
 
     // Ссылки на сайдбары
     sidebar: {
-      "/challenges/": { base: "/challenges/", items: sidebarChallenges() },
-      "/js/": { base: "/js/", items: sidebarJs() },
+      '/challenges/': { base: '/challenges/', items: sidebarChallenges() },
+      '/js/': { base: '/js/', items: sidebarJs() },
     },
 
     docFooter: {
-      prev: "Назад",
-      next: "Далее",
+      prev: 'Назад',
+      next: 'Далее',
     },
 
     outline: {
-      label: "Содержание",
+      label: 'Содержание',
     },
 
-    returnToTopLabel: "Наверх",
-    sidebarMenuLabel: "Меню",
+    returnToTopLabel: 'Наверх',
+    sidebarMenuLabel: 'Меню',
 
     notFound: {
-      title: "Страница не найдена",
-      quote: "Похоже, вы перешли по неверной ссылке или запрашиваемая страница была удалена.",
-      linkLabel: "Перейти на главную",
-      linkText: "Вернуться на главную",
+      title: 'Страница не найдена',
+      quote:
+        'Похоже, вы перешли по неверной ссылке или запрашиваемая страница была удалена.',
+      linkLabel: 'Перейти на главную',
+      linkText: 'Вернуться на главную',
     },
 
     footer: {
-      message: "twep.",
-      copyright: "2025",
+      message: 'twep.',
+      copyright: '2025 – 2026',
     },
 
-    lightModeSwitchTitle: "Переключить на светлую тему",
-    darkModeSwitchTitle: "Переключить на тёмную тему",
+    lightModeSwitchTitle: 'Переключить на светлую тему',
+    darkModeSwitchTitle: 'Переключить на тёмную тему',
 
     socialLinks: [
       {
-        icon: "telegram",
-        link: "https://t.me/twepru"
+        icon: 'telegram',
+        link: 'https://t.me/twepru',
       },
       {
-        icon: "vk",
-        link: "https://vkvideo.ru/@twepru"
+        icon: 'vk',
+        link: 'https://vkvideo.ru/@twepru',
       },
     ],
   },
   vite: {
     plugins: [tailwindcss()],
   },
-});
+})
