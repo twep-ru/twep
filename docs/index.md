@@ -10,8 +10,8 @@ hero:
       text: Смотреть челленджи
       link: /challenges/newbie/qr-code/
     - theme: alt
-      text: Гайды по JS
-      link: /js/links/docs
+      text: Практика по JS
+      link: /js/practice/guess-number
   image:
     src: /twep-cat.png
     alt: Кот в очках, маскот twep.

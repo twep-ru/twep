@@ -7,10 +7,9 @@ import './Layout.vue'
 import ArticleMeta from '../components/ArticleMeta.vue';
 import ModernJsMeta from '../components/ModernJsMeta.vue';
 
-// Голосования
+// Карточки проектов
 import ProjectCard from '../components/ProjectCard.vue';
 import ProjectCardSmall from '../components/ProjectCardSmall.vue';
-import Poll from '../components/Poll.vue';
 
 // Текстовые заглушки в уроках
 import LessonOverview from '../components/LessonOverview.vue';
@@ -35,7 +34,6 @@ export default {
 
     app.component('ProjectCard', ProjectCard);
     app.component('ProjectCardSmall', ProjectCardSmall);
-    app.component('Poll', Poll);
 
     app.component('LessonOverview', LessonOverview);
     app.component('LessonKnowledgeCheck', LessonKnowledgeCheck);

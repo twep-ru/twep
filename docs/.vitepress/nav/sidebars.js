@@ -19,46 +19,6 @@ function sidebarJs() {
         },
       ],
     },
-    {
-      text: "Полезные ссылки",
-      collapsed: false,
-      items: [
-        {
-          text: "Онлайн-учебники",
-          link: "links/docs",
-        },
-        {
-          text: "Telegram-чаты",
-          link: "links/community",
-        },
-      ],
-    },
-    {
-      text: "grammY",
-      collapsed: false,
-      items: [
-        {
-          text: "Эхо-бот",
-          link: "grammy/echo",
-        },
-        {
-          text: "Приветственный бот",
-          link: "grammy/hello",
-        },
-        {
-          text: "Бот с подсказками",
-          link: "grammy/hints",
-        },
-        {
-          text: "Бот-калькулятор",
-          link: "grammy/calculator",
-        },
-        {
-          text: "Бот случайных фактов",
-          link: "grammy/random",
-        },
-      ],
-    },
   ];
 }
 

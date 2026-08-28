@@ -12,13 +12,13 @@ function nav() {
       activeMatch: "/challenges/",
     },
     {
-      text: "Заметки",
-      link: "https://stuffcheck-eta.vercel.app/",
+      text: "Практика по JS",
+      link: "/js/practice/guess-number",
+      activeMatch: "/js/",
     },
     {
-      text: "Гайды по JS",
-      link: "/js/links/docs",
-      activeMatch: "/js/",
+      text: "Заметки",
+      link: "https://stuffcheck-eta.vercel.app/",
     },
   ];
 }
